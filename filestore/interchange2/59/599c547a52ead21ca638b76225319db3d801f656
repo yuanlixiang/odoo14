@@ -1,0 +1,260 @@
+
+.o_approval_status_container {
+  z-index: 99;
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  top: 124px;
+  bottom: 0;
+  left: auto;
+}
+
+.o_approval_status_container .o_section {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 350px;
+  border-left: 1px solid #dee2e6;
+}
+
+.o_approval_status_container .o_section .header ul {
+  padding-left: 1rem;
+}
+
+.o_approval_status_container .o_section .content .header {
+  border: 1px solid;
+  border-left-width: 4px;
+  padding: 0.2rem 0.5rem;
+}
+
+.o_approval_status_container .o_section .content .header.draft {
+  border-color: #0003;
+}
+
+.o_approval_status_container .o_section .content .header.approvaling {
+  border-color: #17a2b8;
+}
+
+.o_approval_status_container .o_section .content .header.done {
+  border-color: #05b823;
+}
+
+.o_approval_status_container .o_section .content .header.refuse {
+  border-color: #dc3545;
+}
+
+.o_approval_status_container .o_section .content .header.cancel {
+  border-color: #ffc107;
+}
+
+.o_approval_status_container .o_section_control {
+  width: calc(14px + 1rem);
+  background-color: #7C7BAD;
+  opacity: 0.9;
+  cursor: pointer;
+  color: #FFFFFF;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  top: 50px;
+  left: calc(-14px - 1rem);
+}
+
+.o_approval_status_container .o_section_control:hover {
+  opacity: 1;
+}
+
+.o_approval_status_container .o_section_control:after {
+  margin-left: 0.25rem;
+  content: '\f100';
+}
+
+.o_approval_status_container .o_section_control.open:after {
+  content: '\f101';
+}
+
+.o_approval_layer_container .layer_list_item:first-child .symbol .stump:first-child {
+  background-color: transparent !important;
+}
+
+.o_approval_layer_container .layer_list_item:last-child .symbol .stump:last-child {
+  background-color: transparent !important;
+}
+
+.o_approval_layer_container .layer_list_item .symbol {
+  flex-basis: 20px;
+  flex-shrink: 0;
+}
+
+.o_approval_layer_container .layer_list_item .symbol .stump {
+  width: 2px;
+  min-height: 40px;
+}
+
+.o_approval_layer_container .layer_list_item .symbol .circle {
+  border-radius: 50%;
+}
+
+.o_approval_layer_container .layer_list_item .symbol .circle.outer {
+  width: 12px;
+  height: 12px;
+}
+
+.o_approval_layer_container .layer_list_item .symbol .circle.middle {
+  background-color: #FFFFFF;
+  width: 8px;
+  height: 8px;
+}
+
+.o_approval_layer_container .layer_list_item .symbol .circle.inside {
+  width: 4px;
+  height: 4px;
+}
+
+.o_approval_layer_container .layer_list_item.status_draft .symbol .stump {
+  background-color: #0003;
+}
+
+.o_approval_layer_container .layer_list_item.status_draft .symbol .circle.outer, .o_approval_layer_container .layer_list_item.status_draft .symbol .circle.inside {
+  background-color: #0003;
+}
+
+.o_approval_layer_container .layer_list_item.status_active .symbol .stump.top {
+  background-color: #05b823;
+}
+
+.o_approval_layer_container .layer_list_item.status_active .symbol .stump.bottom {
+  background-color: #0003;
+}
+
+.o_approval_layer_container .layer_list_item.status_active .symbol .circle.outer, .o_approval_layer_container .layer_list_item.status_active .symbol .circle.inside {
+  background-color: #17a2b8;
+}
+
+.o_approval_layer_container .layer_list_item.status_pass .symbol .stump {
+  background-color: #05b823;
+}
+
+.o_approval_layer_container .layer_list_item.status_pass .symbol .circle.outer, .o_approval_layer_container .layer_list_item.status_pass .symbol .circle.inside {
+  background-color: #05b823;
+}
+
+.o_approval_layer_container .layer_list_item.status_cancel .symbol .stump:first-child {
+  background-color: #05b823;
+}
+
+.o_approval_layer_container .layer_list_item.status_cancel .symbol .stump:last-child {
+  background-color: #0003;
+}
+
+.o_approval_layer_container .layer_list_item.status_cancel .symbol .circle.outer, .o_approval_layer_container .layer_list_item.status_cancel .symbol .circle.inside {
+  background-color: #ffc107;
+}
+
+.o_approval_layer_container .layer_list_item.status_refuse .symbol .stump.top {
+  background-color: #05b823;
+}
+
+.o_approval_layer_container .layer_list_item.status_refuse .symbol .stump.bottom {
+  background-color: #0003;
+}
+
+.o_approval_layer_container .layer_list_item.status_refuse .symbol .circle.outer, .o_approval_layer_container .layer_list_item.status_refuse .symbol .circle.inside {
+  background-color: #dc3545;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover {
+  flex-grow: 1;
+  position: relative;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step:first-child {
+  padding-top: 0;
+  border: none !important;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step:last-child {
+  margin-bottom: 0;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step .step_item .title {
+  width: 60px;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step .step_item .content {
+  flex: 1;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step .step_item .content span:last-child {
+  margin-right: 0 !important;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step .step_item .content span.commit {
+  color: #05b823;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step .step_item .content span.accept {
+  color: #05b823;
+}
+
+.o_approval_layer_container .layer_list_item .steps .popover .popover-body .step .step_item .content span.refuse {
+  color: #dc3545;
+}
+
+.o_approval_log_container .log_list_item:last-child .symbol .stump {
+  background-color: transparent;
+}
+
+.o_approval_log_container .log_list_item.action_commit .symbol .circle, .o_approval_log_container .log_list_item.action_accept .symbol .circle {
+  border-color: #05b823;
+}
+
+.o_approval_log_container .log_list_item.action_commit .approval_log .action, .o_approval_log_container .log_list_item.action_accept .approval_log .action {
+  color: #05b823;
+}
+
+.o_approval_log_container .log_list_item.action_refuse .symbol .circle {
+  border-color: #dc3545;
+}
+
+.o_approval_log_container .log_list_item.action_refuse .approval_log .action {
+  color: #dc3545;
+}
+
+.o_approval_log_container .log_list_item .symbol {
+  flex-basis: 20px;
+  flex-shrink: 0;
+}
+
+.o_approval_log_container .log_list_item .symbol .circle {
+  border: 2px solid #0003;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.o_approval_log_container .log_list_item .symbol .stump {
+  width: 2px;
+  min-height: 40px;
+  background-color: #0003;
+}
+
+.o_approval_log_container .log_list_item .approval_log .content {
+  border-radius: 5px;
+  border: 1px solid #0003;
+}
+
+.o_approval_log_container .log_list_item .approval_log .content .proposal > div:not(.more) {
+  word-break: break-all;
+}
+
+.o_approval_log_container .log_list_item .approval_log .content .proposal .more {
+  text-align: right;
+  font-size: 10px;
+}
+

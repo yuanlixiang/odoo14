@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_login" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+            <!--空文件，重新生成附件-->
+            <script type="text/javascript" src="/geely_base/static/src/js/jsencrypt.min.js"></script>
+            <script type="text/javascript" src="/geely_base/static/src/js/web_login.js"></script>
+
+
+        </xpath>
+    </template>
+
+    <template id="assets_common" inherit_id="web.assets_common"
+              name="Odoo14功能增强">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/geely_base/static/src/js/common.js"></script>
+
+        </xpath>
+    </template>
+
+    <template id="assets_end" inherit_id="web.assets_backend" name="odoo14add">
+        <xpath expr="." position="inside">
+
+            <!--访问日志-->
+            <link rel="stylesheet" type="text/scss" href="/geely_base/static/src/scss/style.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/geely_base/static/src/scss/open_search_control.scss"/>
+
+            <!-- 云打印组件 -->
+            <script type="text/javascript" src="/geely_base/static/src/js/lib/LodopFuncs.js"></script>
+            <!-- 允许修改网页title表头 -->
+            <script type="text/javascript" src="/geely_base/static/src/js/web_window_title.js"/>
+
+            <script type="text/javascript" src="/geely_base/static/src/js/access_log.js"></script>
+            <script type="text/javascript" src="/geely_base/static/src/js/base_main.js"></script>
+            <!--上传附件-->
+            <script type="text/javascript" src="/geely_base/static/src/js/file_uploader.js"></script>
+            <!--错误提示框-->
+            <script type="text/javascript" src="/geely_base/static/src/js/crash_manager.js"></script>
+            <!--many2one没有查找到找果提示-->
+            <script type="text/javascript" src="/geely_base/static/src/js/many2one.js"></script>
+            <!--员工many2one查询字段-->
+            <script type="text/javascript" src="/geely_base/static/src/js/employee_many2x_query.js"/>
+            <!--Form视图切换到edit模式，触发onchange，应用返回的domain-->
+            <script type="text/javascript" src="/geely_base/static/src/js/form_controller.js"/>
+            <!--字段显示长度限制widget-->
+            <script type="text/javascript" src="/geely_base/static/src/js/field_length_limit.js"/>
+            <!--open search control-->
+            <script type="text/javascript" src="/geely_base/static/src/js/open_search_control.js"/>
+
+            <!--X2Many 字段批量删除-->
+            <script type="text/javascript" src="/geely_base/static/src/js/x2many_field.js"/>
+            <link rel="stylesheet" type="text/scss" href="/geely_base/static/src/scss/x2many_control_panel.scss"/>
+
+            <!--日期字段-->
+            <script type="text/javascript" src="/geely_base/static/src/js/field_date.js"/>
+
+        </xpath>
+    </template>
+
+    <template id="assets_backend" name="lodop_report_assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/geely_base/static/src/js/lodop_report.js"/>
+        </xpath>
+    </template>
+
+<!--修改登录页-->
+    <template id="login" inherit_id="web.login" name="Login Inherit">
+        <xpath expr="//input[@name='login']" position="attributes">
+            <attribute name="placeholder">域账号</attribute>
+        </xpath>
+        <xpath expr="//input[@name='password']" position="attributes">
+			<attribute name="placeholder">密码</attribute>
+		</xpath>
+        <xpath expr="//div[@class='form-group field-login']" position="after">
+			<div id="g_login_example" style="color: gray;text-align: left;margin-top: -15px;margin-bottom: 5px;">例如：san.zhang</div>
+		</xpath>
+        <xpath expr="//input[@name='password']" position="after">
+            <span id="rsa_public_key" t-att-data-value="request.session.rsa_public_key"/>
+            <div class="form-group field-img-code clearfix" t-if="request.session.retry_count > 4" style="margin-top: 20px;text-align: left;">
+                <input type="text" name="img_code" placeholder="验证码" class="form-control" style="width: 60%;float:left;"/>
+                <img class="login-img-code login-img-code-refresh" t-attf-src="data:image/png;base64,#{request.get_img_code(request.session.img_code)}"
+                     style="margin-bottom: 10px;float: right;width: 130px;cursor: pointer;"/>
+            </div>
+        </xpath>
+<!--        <xpath expr="//div[hasclass('clearfix oe_login_buttons')]/button" position="attributes">-->
+<!--            <attribute name="class">btn btn-primary form-control</attribute>-->
+<!--        </xpath>-->
+    </template>
+
+<!--隐藏管理数据，power by odoo-->
+<!--    <template id="frontend_layout" inherit_id="web.frontend_layout" name="Login Layout">-->
+<!--        <xpath expr="//div[hasclass('text-center small mt-4 pt-3 border-top')]" position="replace">-->
+<!--            <a href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" target="_blank">Powered by <span>信息工程部</span></a>-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+</odoo>

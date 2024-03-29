@@ -1,0 +1,60 @@
+
+body.o_web_client .o_content .o_pivot {
+  padding: 30px 0 30px 0px !important;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered {
+  background-color: var(--biz-theme-body-color) !important;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered thead tr {
+  background-color: var(--biz-theme-body-color) !important;
+  height: 50px;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered thead tr th {
+  background-color: var(--biz-theme-body-color) !important;
+  color: var(--biz-theme-body-text-color) !important;
+  font-weight: 600 !important;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered thead tr th:focus-within {
+  background-color: unset !important;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered tbody th {
+  background-color: var(--biz-theme-body-color) !important;
+  color: var(--biz-theme-body-text-color) !important;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered tbody tr {
+  background-color: var(--biz-theme-body-color) !important;
+  height: 50px;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered tbody tr td {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered tbody tr td.o_pivot_cell_value {
+  background-color: var(--biz-theme-body-color) !important;
+  color: var(--biz-theme-body-text-color) !important;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered tbody tr td.o_pivot_cell_value .o_value {
+  text-align: center;
+}
+
+body.o_web_client .o_content .o_pivot .table-bordered tbody tr:hover {
+  background-color: var(--biz-theme-secondary-color) !important;
+}
+
+@media (max-width: 991.98px) {
+  body.o_web_client .o_content .o_pivot {
+    padding: 30px 15px !important;
+  }
+}
+

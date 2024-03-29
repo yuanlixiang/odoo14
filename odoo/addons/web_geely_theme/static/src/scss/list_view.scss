@@ -1,0 +1,127 @@
+tr{
+    .o_data_cell {
+        border-left: 1px solid $table-border-color;
+        &:first-child{
+            border-left: none
+        }
+    }
+
+    .o_list_record_selector ~ td{
+        border-left: 1px solid $table-border-color;
+    }
+}
+
+.o_list_view {
+    .table-responsive {
+        .o_list_table {
+            // th & td are here for compatibility with chrome
+            thead tr:nth-child(1) th {
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+            thead tr:nth-child(1) th {
+                background-color: $o-list-footer-bg-color;
+            }
+            tfoot,
+            tfoot tr:nth-child(1) td {
+                position: sticky;
+                bottom: 0;
+            }
+            tfoot tr:nth-child(1) td {
+                background-color: $o-list-footer-bg-color;
+            }
+            thead th{
+                border-bottom-width: 1px;
+            }
+            // 弹窗样式
+            //thead th:first-child:not(.o_list_record_selector){
+            //    padding-left: $o-horizontal-padding;
+            //}
+
+            tbody{
+                tr{
+                    td{
+                        vertical-align: middle !important;
+                        // 内容过长，换行
+                        &.o_list_many2one{
+                            white-space: normal !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .o_optional_columns_dropdown_toggle, .o_optional_columns{
+        left: 0 !important;
+        right: auto;
+    }
+    .o_optional_columns{
+        .dropdown-menu-right{
+            left: 0;
+            right: auto;
+        }
+    }
+
+}
+
+// Big checkboxes
+.o_list_view {
+    // overflow-y: auto;
+
+    .custom-checkbox:not(.o_boolean_toggle) {
+        margin-right: 10px;
+
+        .custom-control-label {
+
+            &::before {
+                outline: none !important;
+                border: 1px solid #4c4c4c;
+
+            }
+        }
+    }
+}
+//.o_list_view{
+//    .o_optional_columns {
+//        right: 0 !important;
+//        left: auto !important;
+//    }
+//}
+
+
+.o_thead_extra_container{
+    position: absolute;
+    left: 0px;
+    top: -1000px;
+    width: 100%;
+    z-index: -1;
+    > div{
+        border-left: 1px solid #dfdfdf;
+        padding: 0.3rem;
+        border-top: 1px solid #dee2e6;
+        color: #4c4c4c;
+        font-weight: 700;
+        display: inline-block;
+        position: relative;
+
+        &:after{
+            margin-left: 6px;
+            content: "\f0d7";
+            opacity: 0;
+        }
+
+        span{
+            bottom: 0;
+            cursor: col-resize;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 10px;
+            z-index: 1;
+        }
+    }
+}
+
+

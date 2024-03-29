@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="assets_backend" name="Backend Assets" inherit_id="web.assets_backend">
+            <xpath expr="//link[last()]" position="after">
+                <link rel="stylesheet" type="text/scss" href="/listview_sticky_header_and_column/static/src/scss/main.scss" />
+            </xpath>
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/listview_sticky_header_and_column/static/src/js/main.js" />
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

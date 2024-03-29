@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="web.ControlPanel" t-inherit-mode="extension" owl="1">
+
+        <xpath expr="//div[@class='o_cp_searchview']" position="replace">
+            <t t-if="props.action.context &amp;&amp; props.action.context.open_search_bar">
+
+            </t>
+            <t t-else="">
+                <div class="o_cp_searchview"
+                 role="search"
+                 t-ref="searchView">
+                    <div t-if="props.withSearchBar" class="o_searchview" role="search" aria-autocomplete="list">
+                        <i class="o_searchview_icon fa fa-search"
+                           title="Search..."
+                           role="img"
+                           aria-label="Search..."
+                        />
+                        <SearchBar t-if="props.withSearchBar" fields="fields"/>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+
+        <xpath expr="//div[@class='o_cp_top']" position="after">
+            <t t-if="props.withSearchBar">
+                <t t-if="props.action.context &amp;&amp; props.action.context.open_search_bar">
+                    <div class="search_control">
+                        <OpenSearchControl fields="fields"/>
+                    </div>
+                </t>
+            </t>
+
+
+        </xpath>
+
+    </t>
+
+    <t t-name="geely.OpenSearchControl" owl="1">
+        <div>
+            <div class="open_close">
+                <div>
+                    <div class="search_text">搜索</div>
+                    <div class="btn_triangle fa fa-sort-up"></div>
+                </div>
+
+            </div>
+            <div class="open-search-control" style="display:none;">
+                <div class="search_fields">
+                    <t t-foreach="searchSource" t-as="source">
+                        <t t-component="source.component" t-props="source.props"/>
+                    </t>
+
+                </div>
+                <div class="search_operation">
+                <div class="search_btn">
+                    <button class="btn btn-sm btn-primary" t-on-click="onClickSearch">查 询</button>
+                    <button class="btn btn-sm btn-secondary" t-on-click="onClickClear">重 置</button>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+    </t>
+</templates>

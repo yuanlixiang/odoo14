@@ -1,0 +1,5 @@
+
+.o_kanban_view .oe_kanban_card.o_kanban_commit {
+  width: 450px;
+  cursor: pointer;
+}

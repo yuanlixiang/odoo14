@@ -1,0 +1,17 @@
+
+.o_main_navbar .navigation_toggle {
+  float: left;
+}
+
+.o_main_navbar .navigation_toggle .toggle_home {
+  height: 46px;
+  padding: 0 12px 0 16px;
+  color: white;
+  line-height: 46px;
+  display: block;
+}
+
+.o_main_navbar .navigation_toggle .toggle_home:hover {
+  background-color: #5f5e97;
+}
+

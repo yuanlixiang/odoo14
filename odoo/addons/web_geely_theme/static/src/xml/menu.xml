@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+    <!--修改原菜单-->
+    <t t-extend="Menu">
+        <t t-jquery=".o_menu_apps" t-operation="before">
+            <div class="navigation-toggle">
+                <a href="#" class="toggle-home" title="切换主菜单">
+                    <i class="fa fa-th-large"/>
+                    <i class="fa fa-chevron-left"/>
+                </a>
+                <div class="toggle-favorite" href="#" title="收藏菜单" t-if="widget.use_favorite_menu">
+                    <a href="#" class="dropdown-toggle o-no-caret" data-toggle="dropdown" data-display="static"
+                       aria-expanded="false"
+                       role="button">
+                        <i class="fa fa-reorder"/>
+                    </a>
+                    <div class="dropdown-menu" role="menu"/>
+                </div>
+                <a class="toggle-sidebar" href="#" title="切换侧边栏菜单">
+                    <i class="fa fa-outdent"/>
+                    <i class="fa fa-indent"/>
+                </a>
+            </div>
+            <div class="o-favorite-sections"/>
+        </t>
+    </t>
+</templates>

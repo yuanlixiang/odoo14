@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="cron_users_access_module" model="ir.cron">
+        <field name="name">用户访问日志更新数据</field>
+        <field name="numbercall">-1</field>
+        <field name="interval_type">days</field>
+        <field name="doall">False</field>
+        <field name="active">False</field>
+        <field name="interval_number">1</field>
+        <field name="model_id" ref="model_geely_users_access_log"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_bind_module()</field>
+    </record>
+
+    <record id="cron_update_employee_all_from_ehr" model="ir.cron">
+        <field name="interval_type">days</field>
+        <field name="name">更新研究院所有员工信息</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
+        <field name="active">False</field>
+        <field name="interval_number">1</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code">model.cron_update_employee_all_from_ehr()</field>
+    </record>
+
+    <record id="cron_update_employee_from_leave_department" model="ir.cron">
+        <field name="interval_type">days</field>
+        <field name="name">更新离职部门员工信息</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
+        <field name="active">True</field>
+        <field name="interval_number">1</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="state">code</field>
+        <field name="code">model.cron_update_employee_from_leave_department()</field>
+    </record>
+
+    <record id="cron_push_access_log" model="ir.cron">
+        <field name="interval_type">days</field>
+        <field name="name">每日推送用户访问日志</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
+        <field name="active">True</field>
+        <field name="interval_number">1</field>
+        <field name="model_id" ref="model_geely_users_access_log"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_push_access_log()</field>
+        <field name="nextcall" eval="datetime(2000,1,1,16,20,0).strftime('%Y-%m-%d %H:%M:%S')" />
+    </record>
+</odoo>

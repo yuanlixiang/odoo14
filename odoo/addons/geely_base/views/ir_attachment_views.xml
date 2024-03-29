@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <data>
+        <record id="geely_base_view_ir_attachment_form" model="ir.ui.view">
+            <field name="name">base.ir.attachment.form</field>
+            <field name="model">ir.attachment</field>
+            <field name="priority">50</field>
+            <field name="arch" type="xml">
+                <form create="0" edit="0" delete="0" string="附件">
+                    <sheet>
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="type"/>
+                                <field name="datas" filename="datas_fname" attrs="{'invisible':[('type','=','url')]}"/>
+                                <field name="datas_fname" invisible="1" attrs="{'invisible':[('type','=','url')]}"
+                                       class="oe_inline oe_right"/>
+                            </group>
+                            <group>
+                                <field name="url" widget="url" attrs="{'invisible':[('type','=','binary')]}"/>
+                                <field name="mimetype" invisible="1"/>
+                                <field name="res_model" invisible="1"/>
+                                <!--<field name="category_id" widget="many2many_tags"/>-->
+                            </group>
+                            <group>
+                                <label for="create_uid" string="创建日期"/>
+                                <div name="creation_div">
+                                    <field name="create_uid" readonly="1" class="oe_inline"/>
+                                    <field name="create_date" readonly="1" class="oe_inline"/>
+                                </div>
+                            </group>
+                            <group name="description_group" string="说明" colspan="4">
+                                <field name="description" nolabel="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="geely_base_view_ir_attachment_tree" model="ir.ui.view">
+            <field name="name">base.ir.attachment.tree</field>
+            <field name="model">ir.attachment</field>
+            <field name="priority">50</field>
+            <field name="arch" type="xml">
+                <tree string="文档" create="0" delete="0">
+                    <field name="name" invisible="1"/>
+                    <field name="type" invisible="1"/>
+                    <field name="datas" filename="datas_fname" attrs="{'invisible':[('type','=','url')]}"/>
+                    <field name="datas_fname" invisible="1" attrs="{'invisible':[('type','=','url')]}"  />
+                    <!--<field name="category_id" widget="many2many_tags"/>-->
+                   <field name="res_model" invisible="1"/>
+                    <field name="create_uid"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="geely_base_ir_attachment_form_not_create" model="ir.ui.view">
+            <field name="name">base.ir.attachment.form.not.create</field>
+            <field name="model">ir.attachment</field>
+            <field name="priority">40</field>
+            <field name="arch" type="xml">
+                <form create="0" edit="0" string="附件">
+                    <sheet>
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="type"/>
+                                <field name="datas" filename="datas_fname" attrs="{'invisible':[('type','=','url')]}"/>
+                                <field name="datas_fname" invisible="1" attrs="{'invisible':[('type','=','url')]}"
+                                       class="oe_inline oe_right"/>
+                            </group>
+                            <group>
+                                <field name="url" widget="url" attrs="{'invisible':[('type','=','binary')]}"/>
+                                <field name="mimetype" invisible="1"/>
+                                <field name="res_model" invisible="1"/>
+                                <field name="category_id" widget="many2many_tags"/>
+                            </group>
+                            <group>
+                                <label for="create_uid" string="创建日期"/>
+                                <div name="creation_div">
+                                    <field name="create_uid" readonly="1" class="oe_inline"/>
+                                    <field name="create_date" readonly="1" class="oe_inline"/>
+                                </div>
+                            </group>
+                            <group name="description_group" string="说明" colspan="4">
+                                <field name="description" nolabel="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="geely_base_ir_attachment_tree_not_create" model="ir.ui.view">
+            <field name="name">base.ir.attachment.tree</field>
+            <field name="model">ir.attachment</field>
+            <field name="priority">40</field>
+            <field name="arch" type="xml">
+                <tree string="文档" create="0" edit="0">
+                    <field name="datas_fname"/>
+                    <field name="type"/>
+                    <field name="category_id" widget="many2many_tags"/>
+                    <field name="create_uid" string="创建人"/>
+                    <field name="create_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="geely_base_view_ir_attachment_search" model="ir.ui.view">
+            <field name="name">base.ir.attachment.search</field>
+            <field name="model">ir.attachment</field>
+            <field name="priority">50</field>
+            <field name="arch" type="xml">
+                <search string="文档">
+                    <field name="datas_fname"/>
+                    <field name="type"/>
+                    <field name="category_id" widget="many2many_tags"/>
+                    <field name="create_uid" string="创建人"/>
+                    <filter string="文件类" name="document_type" domain="[('type','=','binary')]"/>
+                    <filter string="url类" name="url_type" domain="[('type','=','url')]"/>
+                    <group expand="1" string="分组">
+                        <filter name="groupby_type" context="{'group_by' : 'type'}" string="类型"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

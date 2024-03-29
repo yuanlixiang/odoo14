@@ -1,0 +1,228 @@
+
+/*
+	MAIN STYLE
+*/
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,vietnamese);*/
+body, html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.web-login-container {
+  background-color: #bbb;
+  color: #fff;
+  height: 100%;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-wrap: nowrap; flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.web-login-container .web-login-left {
+  height: 100%;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  -webkit-flex-wrap: nowrap; flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 4%;
+  color: #fff;
+  z-index: 100;
+}
+
+.web-login-container .web-login-left .web-login-brand {
+  margin-top: 10%;
+}
+
+.web-login-container .web-login-left .web-login-left-content {
+  margin-top: -20px;
+}
+
+.web-login-container .web-login-left .web-login-left-content h1 {
+  margin: 20px 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.web-login-container .web-login-left .web-login-left-content p {
+  opacity: .7;
+  margin: 5px 0;
+  letter-spacing: .5px;
+}
+
+.web-login-container .web-login-left .web-login-left-footer {
+  margin-bottom: 10%;
+  opacity: .7;
+}
+
+.web-login-container .web-login-left .web-login-left-footer p {
+  font-size: 12px;
+  margin: 2px 0;
+  letter-spacing: .5px;
+}
+
+.web-login-container .web-login-right {
+  max-width: 700px;
+  min-width: 450px;
+  width: 30%;
+  height: 100%;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  -webkit-flex-wrap: nowrap; flex-wrap: nowrap;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 0px 10px 0 rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.web-login-container .web-login-right .web-login-main {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  -webkit-flex-wrap: nowrap; flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+}
+
+.web-login-container .web-login-right .web-login-main .web-login-title {
+  margin-bottom: 40px;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form {
+  width: 80% !important;
+  min-width: 350px;
+  max-width: 450px;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form #g_login_example,
+.web-login-container .web-login-right .web-login-main .oe_login_form .justify-content-between,
+.web-login-container .web-login-right .web-login-main .oe_login_form button[name=redirect] {
+  display: none !important;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group .form-control-input {
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group .form-control-input:focus {
+  box-shadow: none;
+  border-bottom: 2px solid white;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group .web-img-code-input {
+  float: left;
+  width: 60%;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group .login-img-code {
+  margin-bottom: 10px;
+  float: right;
+  width: 130px;
+  cursor: pointer;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: .5;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group input::-moz-input-placeholder {
+  color: #fff;
+  opacity: .5;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group input::-ms-input-placeholder {
+  color: #fff;
+  opacity: .5;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .form-group.input-focus label {
+  font-size: 16px;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .field-password,
+.web-login-container .web-login-right .web-login-main .oe_login_form .field-login {
+  height: 65px;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .field-login {
+  margin-top: 40px;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .field-img-code {
+  height: 75px;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .oe_login_buttons {
+  margin-top: 50px;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .oe_login_buttons .web-login-btn {
+  height: 56px;
+  font-size: 20px;
+  background-color: #433FD1;
+  border-color: #433FD1;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .oe_login_buttons .web-login-btn:hover {
+  background-color: #3b37d2;
+  border-color: #3b37d2;
+}
+
+.web-login-container .web-login-right .web-login-main .oe_login_form .oe_login_buttons .web-login-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(47, 23, 193, 0.5);
+}
+
+.web-login-container .web-login-right .web-login-right-footer {
+  margin-bottom: 30px;
+  margin-top: auto;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: #b7b7b7;
+}
+
+.web-login-container .web-login-carousel {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.web-login-container .web-login-carousel .carousel-inner,
+.web-login-container .web-login-carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.web-login-container .web-login-carousel .carousel-item:nth-child(1) {
+  background: url("/geely_web_login_interchange/static/src/img/bg-1.png") no-repeat center;
+  background-size: cover;
+}
+
+.web-login-container .web-login-carousel .carousel-item:nth-child(2) {
+  background: url("/geely_web_login_interchange/static/src/img/bg-2.png") no-repeat center;
+  background-size: cover;
+}
+
+.web-login-container .web-login-carousel .carousel-item:nth-child(3) {
+  background: url("/geely_web_login_interchange/static/src/img/bg-3.png") no-repeat center;
+  background-size: cover;
+}
+
+.web-login-container .web-login-carousel .carousel-item:nth-child(4) {
+  background: url("/geely_web_login_interchange/static/src/img/bg-4.png") no-repeat center;
+  background-size: cover;
+}
+
+.web-login-container .web-login-carousel .carousel-indicators {
+  bottom: 25%;
+  justify-content: left;
+  margin-right: 0;
+  margin-left: 4%;
+}

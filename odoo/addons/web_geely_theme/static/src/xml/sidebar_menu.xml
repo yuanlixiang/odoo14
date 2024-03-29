@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+    <span t-name="geely_theme.dragIcon" class="o_menu_drag_icon">
+        <t t-esc="dragIconContent"/>
+    </span>
+
+    <t t-name="geely_theme.SidebarMenuItem" owl="1">
+        <li>
+            <a href="#" draggable="false"
+               t-on-click.prevent="_onMenuClick"
+               t-att-class="classList">
+                    <span>
+                        <t t-esc="props.menu.name"/>
+                        <t t-if="!props.menu.children.length and props.use_favorite_menu">
+                            <i class="fa"
+                               t-attf-class="{{ state.isFavorite ? 'fa-heart' : 'fa-heart-o' }}"
+                               t-on-click.stop.prevent="_onFavoriteMenu" title="收藏菜单"/>
+                        </t>
+                    </span>
+                    <t t-if="props.menu.children.length">
+                        <i class="fa fa-angle-down toggle"/>
+                    </t>
+            </a>
+            <t t-if="props.menu.children.length">
+                <ul>
+                    <t t-foreach="props.menu.children || []" t-as="menu" t-key="menu.id">
+                        <SidebarMenuItem menu="menu" use_favorite_menu="props.use_favorite_menu"/>
+                    </t>
+                </ul>
+            </t>
+        </li>
+    </t>
+
+    <t t-name="geely_theme.SidebarMenu" owl="1">
+        <div class="sidebar-navigation" t-attf-class="{{ props.isFold ? 'd-none' : 'd-flex flex-column' }}">
+            <div class="navigation-section align-items-center d-flex justify-content-center">
+                <div class="o_menu_brand" t-ref="menu-brand" t-on-click="_onAppClick"><t t-esc="props.menu.name"/></div>
+            </div>
+            <div class="menu-sections">
+                <ul>
+                    <t t-foreach="props.menu.children || []" t-as="menu" t-key="menu.id">
+                        <SidebarMenuItem menu="menu" use_favorite_menu="props.use_favorite_menu"/>
+                    </t>
+                </ul>
+            </div>
+        </div>
+    </t>
+</templates>

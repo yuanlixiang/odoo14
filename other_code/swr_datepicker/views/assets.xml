@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="web backend assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/swr_datepicker/static/src/js/tempusdominus.js"/>
+                <script type="text/javascript" src="/swr_datepicker/static/src/js/swr_datepicker.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

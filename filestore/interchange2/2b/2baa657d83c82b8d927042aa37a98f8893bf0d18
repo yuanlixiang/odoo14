@@ -1,0 +1,429 @@
+
+.geely_pss_dashboard {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.geely_pss_dashboard #inner_content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.geely_pss_dashboard #gaes-container {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.geely_pss_dashboard #gaes-container ul {
+  list-style: none;
+}
+
+.geely_pss_dashboard #gaes-container .left-content {
+  padding: 20px;
+  flex-basis: 58%;
+  max-width: 58%;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar {
+  width: 70%;
+  margin: 0 auto;
+  height: 0;
+  padding-top: 70%;
+  position: relative;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .image-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#ababab 15%, transparent 60%);
+  border-radius: 100%;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .image-block:after {
+  content: '';
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  background-color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .image-block img {
+  width: 49%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: default;
+  border-radius: 50%;
+  z-index: 2;
+  height: 0;
+  width: 0;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li {
+  position: absolute;
+  top: -14vw;
+  left: -14vw;
+  transform-origin: 14vw 14vw;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li a {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  background: #505050;
+  position: absolute;
+  font-size: 80%;
+  color: #fff;
+  border: 4px solid #fff;
+  text-decoration: none;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 3px 6px #dbdbdb;
+  overflow: hidden;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li a:hover {
+  border-color: #5887B8;
+  color: #09529c;
+  background-color: #fff;
+  font-size: 100%;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li i {
+  position: absolute;
+  right: -8vw;
+  bottom: -0.5vw;
+  -webkit-animation-name: gaesMove;
+  animation-name: gaesMove;
+  color: #337ab7;
+  font-size: 14px;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li .ar-animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  font-style: inherit;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(1) {
+  transition-delay: 0.02s;
+  transform: rotate(72deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(1) a {
+  transform: rotate(648deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(2) {
+  transform: rotate(108deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(2) a {
+  transform: rotate(612deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(3) {
+  transform: rotate(144deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(3) a {
+  transform: rotate(576deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(4) {
+  transform: rotate(180deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(4) a {
+  transform: rotate(540deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(5) {
+  transform: rotate(216deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(5) a {
+  transform: rotate(504deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(6) {
+  transform: rotate(252deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(6) a {
+  transform: rotate(468deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(7) {
+  transform: rotate(288deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(7) a {
+  transform: rotate(432deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(8) {
+  transform: rotate(324deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(8) a {
+  transform: rotate(396deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(9) {
+  transform: rotate(360deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(9) a {
+  transform: rotate(360deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(10) {
+  transform: rotate(396deg);
+}
+
+.geely_pss_dashboard #gaes-container .left-content .gaes-navbar .menu li:nth-child(10) a {
+  transform: rotate(324deg);
+}
+
+.geely_pss_dashboard #gaes-container .right-content {
+  position: relative;
+  margin: 20px;
+  flex-basis: 42%;
+  max-width: 42%;
+  width: 40%;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .title {
+  color: #09529c;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .title i {
+  margin-right: 10px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .title a {
+  color: #09529c;
+  float: right;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .handle-part {
+  margin-bottom: 10px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .handle-part .input-area {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .handle-part .input-area input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0 30px;
+  padding: 6px 36px 6px 10px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .handle-part .input-area .fa-search {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .handle-part .quick-area {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap; flex-wrap: nowrap;
+  -webkit-box-pack: start; justify-content: flex-start;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .handle-part .quick-area a {
+  margin-right: 20px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .handle-part .quick-area a:last-child {
+  margin-right: 0;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  height: 58%;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques::-webkit-scrollbar {
+  width: 3px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques::-webkit-scrollbar-thumb {
+  background: #cacaca;
+  -webkit-border-radius: 10px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li:hover {
+  background-color: #ddd;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li:last-child {
+  margin-bottom: 0;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li:before {
+  content: " ";
+  display: table;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li:after {
+  clear: both;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li .ques-title {
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding-right: 10px;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li .ques-btn {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap; flex-wrap: nowrap;
+  -webkit-box-pack: start; justify-content: flex-start;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .ques li .ques-btn span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 15px;
+  color: #999;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .no-results {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .list-part .no-results img {
+  width: 120px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .button-area {
+  padding: 15px 0;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  display: table;
+  width: 100%;
+  border-spacing: 10px 0;
+  margin-top: 15px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .button-area a {
+  color: white;
+  display: table-cell;
+  vertical-align: top;
+  width: 74px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .button-area a:focus {
+  text-decoration: none;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .gaes-item {
+  font-weight: bolder;
+  color: white;
+  background-image: linear-gradient(#807d7d, #337ab7);
+  font-size: 13px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  overflow-y: hidden;
+  position: relative;
+  height: 45px;
+  line-height: 45px;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .gaes-item:hover {
+  box-shadow: 0 0 6px #363340;
+}
+
+.geely_pss_dashboard #gaes-container .right-content .gaes-item i {
+  font-size: 50px;
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes gaesMove {
+  0% {
+    right: -7.3vw;
+    opacity: 1;
+  }
+  100% {
+    right: -8vw;
+    opacity: 0;
+  }
+}
+

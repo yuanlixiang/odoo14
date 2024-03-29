@@ -1,0 +1,5 @@
+
+.o_form_view .o_field_widget.o_field_one2many > div, .o_form_view .o_field_widget.o_field_many2many > div {
+  width: 100% !important;
+}
+

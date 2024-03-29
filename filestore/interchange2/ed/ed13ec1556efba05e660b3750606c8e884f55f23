@@ -1,0 +1,19 @@
+
+.o_icon_container {
+  min-height: 150px;
+}
+
+.o_icon_container span {
+  display: -webkit-inline-box; display: -webkit-inline-flex; display: inline-flex;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.o_icon_container span:hover {
+  background-color: #e8e8e8;
+}
+

@@ -1,0 +1,146 @@
+.o_web_client {
+    &.disable-sidebar{
+        .sidebar-navigation{
+            display: none !important;
+        }
+    }
+}
+
+.sidebar-navigation{
+    background-color: $o-webclient-background-color;
+    flex: 0 0 200px;
+    overflow: auto;
+    box-shadow: #0000000f 0px 4px 20px 1px, #00000014 0px 1px 4px 0px;
+    z-index: 10;
+    overflow: hidden;
+
+    .navigation-section{
+        flex: 0 0 $o-navbar-height;
+        border-bottom: 1px solid darken($o-control-panel-background-color, 20%);
+
+        img {
+            width: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .o_menu_brand{
+            height: $o-navbar-height;
+            line-height: $o-navbar-height;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+    }
+
+    .menu-sections{
+        flex: 1 1 auto;
+        overflow: auto;
+
+        ul{
+            list-style: none;
+            padding-left: 0;
+
+            a {
+                color: #505050;
+                display: flex;
+                padding: 0.75rem 1.5rem;
+                align-items: center;
+                position: relative;
+                transition: background-color .3s;
+
+                i.toggle{
+                    margin-left: auto;
+                    transition: transform .3s;
+                }
+
+                span{
+                    i{
+                        margin-left: 1rem;
+                        display: none;
+                    }
+                }
+
+                &:hover{
+                    span{
+                        i{
+                            display: initial;
+                        }
+                    }
+                }
+
+                &:hover, &.active{
+                    background-color: #2125290f;
+                }
+                &.active{
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 3px;
+                        background-color: $o-brand-odoo;
+                        border-bottom-left-radius: 5px;
+                        border-top-left-radius: 5px;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                    }
+
+                }
+                &.open{
+                    & ~ul{
+                        display: block;
+                    }
+                    i.toggle{
+                        transform: rotateZ(180deg);
+                    }
+                }
+            }
+        }
+
+        > ul{
+            > li{
+                > a{
+                    padding-left: 1.5rem
+                }
+                > ul{
+                    > li{
+                        > a{
+                            padding-left: 3rem
+                        }
+                        > ul{
+                            > li{
+                                > a{
+                                    padding-left: 4.5rem
+                                }
+                                > ul{
+                                    > li{
+                                        > a{
+                                            padding-left: 6rem
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            ul{
+                display: none;
+            }
+        }
+
+    }
+}
+// 侧边栏菜单拖动样式
+.o_menu_drag_icon {
+    padding: 0px 3px;
+    color: white;
+    font-weight: bold;
+    background-color: $o-brand-primary;
+    border: 1px solid $o-brand-primary;
+    border-radius: 3px;
+    @include o-position-absolute($top: 0, $right: 0);
+    z-index: -9999;
+}

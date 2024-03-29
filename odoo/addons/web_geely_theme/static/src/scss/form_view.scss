@@ -1,0 +1,23 @@
+.o_form_view{
+    .o_form_statusbar{
+        > .o_statusbar_buttons {
+            flex-flow: row wrap;
+
+            > .btn {
+                $o-statusbar-buttons-vmargin: 3.5px;
+                min-height: $o-statusbar-height - 2 * $o-statusbar-buttons-vmargin;
+                margin: $o-statusbar-buttons-vmargin 3px $o-statusbar-buttons-vmargin 0;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+
+    .oe_button_box{
+        // 确保内容不换行
+        + .oe_title{
+            width: auto;
+            display: inline-block;
+        }
+    }
+}

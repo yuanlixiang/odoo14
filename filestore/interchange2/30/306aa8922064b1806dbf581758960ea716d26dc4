@@ -1,0 +1,34 @@
+
+.o_tree_level .o_tree_level_label {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.o_tree_level .o_tree_level_label .o_toggle_fold {
+  text-align: center;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.o_tree_level .o_tree_level_label .o_toggle_fold:not(.o_open) .fa-caret-right {
+  display: inline-block;
+}
+
+.o_tree_level .o_tree_level_label .o_toggle_fold:not(.o_open) .fa-caret-down {
+  display: none;
+}
+
+.o_tree_level .o_tree_level_label .o_toggle_fold.o_open .fa-caret-right {
+  display: none;
+}
+
+.o_tree_level .o_tree_level_label .o_toggle_fold.o_open .fa-caret-down {
+  display: inline-block;
+}
+
+.o_tree_level .o_tree_level_label .o_tree_level_content {
+  width: 100%;
+}

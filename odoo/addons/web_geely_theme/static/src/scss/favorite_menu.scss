@@ -1,0 +1,115 @@
+.o-favorite-sections{
+    float: left;
+    margin-left: 24px !important;
+    color: white;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 1px dashed transparent;
+
+        &.o_drag_over{
+            border-color: #cccccc;
+        }
+
+        &.o_drag_over, &.show-placeholder{
+            li{
+                display: none;
+                &.placeholder{
+                    display: inline-block;
+                }
+            }
+        }
+
+        li{
+            display: inline-block;
+
+            &.placeholder{
+                display: none;
+            }
+
+            &.o_extra_menu_items{
+                > a{
+                    padding: 0 10px !important;
+
+                    i{
+                        display: initial !important;
+                        position: static !important;
+                        font-size: inherit !important;
+                    }
+
+                    & ~ul{
+                        background-color: $o-brand-odoo;
+                        li{
+                            display: block;
+                            a{
+                                font-weight: 700;
+                                height: $o-navbar-height - 2;
+                                line-height: $o-navbar-height - 2;
+                                color: #FFFFFF;
+                                display: block;
+                                padding: 0 25px 0 18px !important;
+                                position: relative;
+
+                                i{
+                                    display: none;
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 8px;
+                                    font-size: x-small;
+                                    font-weight: normal;
+                                }
+
+                                &:hover, &:focus {
+                                    background-color: $o-navbar-inverse-link-hover-bg;
+                                    color: #FFFFFF;
+                                    i{
+                                        display: initial;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            a{
+                font-weight: 700;
+                height: $o-navbar-height - 2;
+                line-height: $o-navbar-height - 2;
+                color: inherit;
+                display: block;
+                padding: 0 25px 0 5px;
+                position: relative;
+
+                i{
+                    display: none;
+                    position: absolute;
+                    top: 10px;
+                    right: 2px;
+                    font-size: x-small;
+                    font-weight: normal;
+                }
+
+                &:hover, &:focus {
+                    background-color: $o-navbar-inverse-link-hover-bg;
+                    color: inherit;
+                    i{
+                        display: initial;
+                    }
+                }
+            }
+
+            span{
+                display: block;
+                height: $o-navbar-height - 2;
+                padding: 0 25px 0 5px;
+                line-height: $o-navbar-height - 2;
+                color: gray("white");
+                opacity: 0.5;
+                font-size: x-small;
+            }
+        }
+    }
+
+}

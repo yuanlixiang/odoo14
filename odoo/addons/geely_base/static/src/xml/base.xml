@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="geely_widgets.CustomButton">
+        <button t-attf-class="btn btn-sm btn-default #{widget.options.class}" t-att-style="widget.options.style" t-att-title="widget.options.btn_title">
+            <t t-raw="widget.options.title"/>
+            <t t-if="widget.options.icon">
+                <i t-att-class="widget.options.icon"/>
+            </t>
+        </button>
+    </t>
+
+    <t t-name="GFieldBtn">
+        <div>
+            <button class="btn btn-sm oe_highlight"><t t-raw="widget.btn_title"/> </button>
+        </div>
+    </t>
+</templates>

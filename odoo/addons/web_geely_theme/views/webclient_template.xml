@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="web_geely_theme.webclient_bootstrap" inherit_id="web.webclient_bootstrap">
+
+            <xpath expr="//t[@t-set='body_classname']" position="replace">
+                <t t-set="body_classname" t-value="'o_web_client geely_web_client'"/>
+            </xpath>
+            <xpath expr="//t[@t-set='head_web']" position="inside">
+                <script type="text/javascript">
+                    odoo.define('geely_theme.DeviceSize', function (require) {
+                        "use strict";
+
+                        return parseInt(<t t-raw="request.env['ir.config_parameter'].sudo().get_param('web_geely_theme.sidebar_device_size', 6)"/>);
+                    });
+                </script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

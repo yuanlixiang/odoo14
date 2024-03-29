@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+    <record id="data_domain_default" model="geely.base.ehr.domain">
+        <field name="name">geely.com</field>
+    </record>
+
+    <record id="param_access_base_url" model="ir.config_parameter">
+        <field name="key">geely_base.access_base_url</field>
+        <field name="value">http://localhost:8069</field>
+    </record>
+
+    <record id="param_sso_url" model="ir.config_parameter">
+        <field name="key">geely_base.sso_url</field>
+        <field name="value">0</field>
+    </record>
+    <record id="param_sso_appKey" model="ir.config_parameter">
+        <field name="key">geely_base.sso_appKey</field>
+        <field name="value">0</field>
+    </record>
+    <record id="param_sso_login_url" model="ir.config_parameter">
+        <field name="key">geely_base.sso_login_url</field>
+        <field name="value">0</field>
+    </record>
+    <record id="param_sso_redirect" model="ir.config_parameter">
+        <field name="key">geely_base.sso_redirect</field>
+        <field name="value">/</field>
+    </record>
+    <record id="param_g_update_assets" model="ir.config_parameter">
+        <field name="key">geely_base.g_update_assets</field>
+        <field name="value">0</field>
+    </record>
+
+    <record id="param_base_ehr_url" model="ir.config_parameter">
+        <field name="key">geely_base.ehr_url</field>
+        <field name="value">0</field>
+    </record>
+
+    <record id="param_base_visit_log_url" model="ir.config_parameter">
+        <field name="key">geely_base.visit_log_url</field>
+        <field name="value">0</field>
+    </record>
+
+    <record id="param_base_gbop_gbom_url" model="ir.config_parameter">
+        <field name="key">geely_base.gbop_gbom_url</field>
+        <field name="value">0</field>
+    </record>
+
+    <record id="param_base_ehr_tenantOrgId" model="ir.config_parameter">
+        <field name="key">geely_base.ehr_tenantOrgId</field>
+        <field name="value">0</field>
+    </record>
+
+    <record id="param_base_ehr_appKey" model="ir.config_parameter">
+        <field name="key">geely_base.ehr_appKey</field>
+        <field name="value">0</field>
+    </record>
+
+    <record id="param_base_gbop_app_access_key" model="ir.config_parameter">
+        <field name="key">geely_base.gbop_app_access_key</field>
+        <field name="value">0</field>
+    </record>
+
+     <record id="param_base_gbop_app_secret_key" model="ir.config_parameter">
+        <field name="key">geely_base.gbop_app_secret_key</field>
+        <field name="value">0</field>
+    </record>
+
+    <record id="param_base_sso_auto_login" model="ir.config_parameter">
+        <field name="key">geely_base.sso_auto_login</field>
+        <field name="value">off</field>
+    </record>
+
+    <record id="config_parameter_web_base_title_demo" model="ir.config_parameter">
+        <field name="key">web.base.title</field>
+        <field name="value">Demo</field>
+    </record>
+
+    <record id="param_locale_locale" model="ir.config_parameter">
+        <field name="key">locale.locale</field>
+        <field name="value">en_US.UTF-8</field>
+    </record>
+
+
+<!--    组织子父级挂件 在员工梳理多或者层级多的情况下，加载速度会很慢，故需要隐藏该功能-->
+    <delete model="ir.ui.view" search="[('id','=',ref('hr_org_chart.hr_employee_view_form_inherit_org_chart'))]"/>
+    <delete model="ir.ui.view" search="[('id','=',ref('hr_org_chart.hr_employee_public_view_form_inherit_org_chart'))]"/>
+    <delete model="ir.ui.view" search="[('id','=',ref('hr_org_chart.res_users_view_form'))]"/>
+
+    <delete model="ir.rule" search="[('id','=', ref('hr.hr_dept_comp_rule'))]"/>
+    <delete model="ir.rule" search="[('id','=', ref('hr.hr_job_comp_rule'))]"/>
+    <delete model="ir.rule" search="[('id','=', ref('base.res_users_rule'))]"/>
+
+    <menuitem id="hr.menu_hr_root" parent="base.menu_administration"/>
+
+</odoo>

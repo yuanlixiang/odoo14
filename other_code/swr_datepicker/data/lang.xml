@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <data>
+        <record id="base.lang_zh_CN" model="res.lang">
+            <field name="year_format">%Y年</field>
+            <field name="month_format">%Y年%m月</field>
+        </record>
+    </data>
+</odoo>
+
+

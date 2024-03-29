@@ -1,0 +1,17 @@
+html {
+    .o_web_client{
+        // overflow: hidden;
+
+        &.geely_web_client{
+            .o_action_manager{
+                display: flex;
+
+                .o_action, .o_widget_Discuss{
+                    flex: 1 1 100%;
+                    overflow: auto;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.access-log-content{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .access-log-month-users, .access-log-date-module, .access-log-month-module{
+        width: 100%;
+        height: 30%;
+        position: relative;
+        flex: 1 1 30%;
+        //margin-bottom: 3%;
+
+        .buttons{
+            position: absolute;
+            left: 80px;
+            display: flex;
+            align-items: center;
+
+            &::before{
+                margin-right:3px
+            }
+
+
+        }
+    }
+}
+
+.o_list_view {
+  .o_list_table {
+    .text_ellipsis {
+      display: -webkit-box !important;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all
+    }
+  }
+}

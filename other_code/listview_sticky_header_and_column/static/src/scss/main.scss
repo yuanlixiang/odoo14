@@ -1,0 +1,63 @@
+// 鼠标悬停表头展示冻结图标
+.display-on-hover {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    z-index: 20;
+    margin-right: 1px;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ddd;
+    cursor: pointer;
+
+    &:hover {
+        display: block
+    }
+}
+
+.o_list_view thead>tr>th {
+    &:hover {
+        .display-on-hover {
+            display: block;
+
+        }
+    }
+}
+
+
+/* 冻结列样式 */
+.o_list_view {
+    overflow: unset;
+    overflow-x: unset;
+
+    .table-responsive {
+        thead th {
+            position: sticky;
+            top: 0;
+            background-color: #EEE;
+            z-index: 1;
+        }
+
+        tr.o_data_row {
+            position: relative;
+
+            td {
+                white-space: nowrap;
+                padding: 0.3rem 0.75rem;
+            }
+
+            &:hover td {
+                background-color: #EEE !important;
+            }
+
+            &:focus-within td {
+                background-color: #ccc !important;
+            }
+        }
+    }
+}

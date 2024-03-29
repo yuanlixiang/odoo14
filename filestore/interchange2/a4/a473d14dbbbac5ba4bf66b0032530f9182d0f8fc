@@ -1,0 +1,269 @@
+
+.fa.fa-search {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-search::before {
+  content: "" !important;
+}
+
+.fa.fa-folder {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-folder::before {
+  content: "" !important;
+}
+
+.fa.fa-filter {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-filter::before {
+  content: "" !important;
+}
+
+.fa.fa-star {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-star::before {
+  content: "" !important;
+}
+
+.fa.fa-bars {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-bars::before {
+  content: "" !important;
+}
+
+.fa.fa-chevron-left {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-chevron-left::before {
+  content: "" !important;
+}
+
+.fa.fa-chevron-right {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-chevron-right::before {
+  content: "" !important;
+}
+
+.fa.fa-download {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-download::before {
+  content: "" !important;
+}
+
+.fa.fa-plus {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-plus::before {
+  content: "" !important;
+}
+
+.fa.fa-pencil {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-pencil::before {
+  content: "" !important;
+}
+
+.fa.fa-check {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-check::before {
+  content: "" !important;
+}
+
+.fa.fa-times {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-times::before {
+  content: "" !important;
+}
+
+.fa.fa-calendar-check-o {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-calendar-check-o::before {
+  content: "" !important;
+}
+
+.fa.fa-cogs {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-cogs::before {
+  content: "" !important;
+}
+
+.fa.fa-cog {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-cog::before {
+  content: "" !important;
+}
+
+.fa.fa-clock-o {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-clock-o::before {
+  content: "" !important;
+}
+
+.fa.fa-caret-right {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-caret-right::before {
+  content: "" !important;
+}
+
+.fa.fa-caret-down {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-caret-down::before {
+  content: "" !important;
+}
+
+.fa.fa-envelope {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-envelope::before {
+  content: "" !important;
+}
+
+.fa.fa-tasks {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-tasks::before {
+  content: "" !important;
+}
+
+.fa.fa-print {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-print::before {
+  content: "" !important;
+}
+
+.fa.fa-paperclip {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-paperclip::before {
+  content: "" !important;
+}
+
+.fa.fa-user {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-user::before {
+  content: "" !important;
+}
+
+.fa.fa-star-o {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-star-o::before {
+  content: "" !important;
+}
+
+.fa.fa-bug {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-bug::before {
+  content: "" !important;
+}
+
+.fa.fa-inbox {
+  font-family: 'remixicon' !important;
+}
+
+.fa.fa-inbox::before {
+  content: "" !important;
+}
+
+body.o_web_client .dropdown-item.selected:before {
+  font-family: 'remixicon' !important;
+  content: "\eb7b" !important;
+}
+
+body.o_web_client .ri {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+body.o_web_client .fa {
+  vertical-align: middle;
+}
+
+body.o_web_client .fa-folder {
+  color: var(--biz-theme-primary-color) !important;
+}
+
+body.o_web_client .o_menu_systray .fa {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-globe {
+  font-family: 'remixicon' !important;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-globe::before {
+  content: "" !important;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-institution {
+  font-family: 'remixicon' !important;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-institution::before {
+  content: "" !important;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-pencil {
+  font-family: 'remixicon' !important;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-pencil::before {
+  content: "" !important;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-comments {
+  font-family: 'remixicon' !important;
+}
+
+body.o_web_client .o_menu_systray .fa.fa-comments::before {
+  content: "" !important;
+}
+
+body.o_web_client .header_menu_right_content .fullscreen-exit .ri-fullscreen-line:before {
+  content: "\ed9a" !important;
+}
+

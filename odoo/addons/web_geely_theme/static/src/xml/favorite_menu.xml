@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="geely_theme.FavoriteMenu" owl="1">
+        <Portal target="'.navigation-toggle .toggle-favorite .dropdown-menu'">
+            <div>
+                <t t-if="!props.menuData.length">
+                    <div class="p-3 text-400" style="line-height: 1">没有收藏的菜单！</div>
+                </t>
+                <a href="#" class="dropdown-item d-flex align-items-center" t-foreach="props.menuData" t-as="menu" t-key="menu.id"
+                   t-on-click.stop.prevent="_onMenuClick(menu)">
+                    <t t-if="menu.parent_id">
+                        <span t-esc="[menu.parent_id[1], menu.name].join('/')"/>
+                    </t>
+                    <t t-else="">
+                        <span t-esc="menu.name"/>
+                    </t>
+                    <i class="fa fa-remove" t-on-click.stop.prevent="_onDeleteFavorite(menu)"/>
+                </a>
+            </div>
+        </Portal>
+    </t>
+</templates>

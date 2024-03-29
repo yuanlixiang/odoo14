@@ -1,0 +1,49 @@
+
+.o_multi_tab_container .nav_left, .o_multi_tab_container .nav_right {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+}
+
+.o_multi_tab_container .multi_tab_body {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.o_multi_tab_container .multi_tab_body .multi_tabs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+}
+
+.o_multi_tab_container .multi_tab_body .o_multi_tab {
+  position: relative;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+.o_multi_tab_container .multi_tab_body .o_multi_tab.active {
+  background-color: #7C7BAD;
+  color: #FFFFFF;
+}
+
+.o_multi_tab_container .multi_tab_body .o_multi_tab:hover {
+  background-color: #7C7BAD;
+  color: #FFFFFF;
+}
+
+.o_multi_tab_container .multi_tab_body .o_multi_tab:hover div.fa {
+  display: block;
+}
+
+.o_multi_tab_container .multi_tab_body .o_multi_tab div.fa {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <data>
+
+        <record id="action_update_employee_user" model="ir.actions.server">
+            <field name="name">更新员工的用户</field>
+            <field name="model_id" ref="model_hr_employee"/>
+            <field name="binding_model_id" ref="model_hr_employee"/>
+            <field name="binding_view_types">list</field>
+            <field name="state">code</field>
+            <field name="code">records.action_to_update_users()</field>
+        </record>
+
+        <record id="view_department_form" model="ir.ui.view">
+            <field name="name">hr.department.form.inherit</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_form"/>
+            <field name="arch" type="xml">
+                <field name="parent_id" position="after">
+                    <field name="g_center"/>
+                    <field name="g_brand"/>
+                    <field name="g_tenantOrgId" groups="base.user_root"/>
+                </field>
+            </field>
+        </record>
+
+<!--        <record id="view_department_kanban" model="ir.ui.view">-->
+<!--            <field name="name">hr.department.kanban.inherit</field>-->
+<!--            <field name="model">hr.department</field>-->
+<!--            <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//li[hasclass('o_force_ltr')]" position="after">-->
+<!--                    <li t-if="record.g_soft_id.raw_value" class="o_force_ltr"><field name="g_soft_id"/></li>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+
+
+        <record id="view_department_tree" model="ir.ui.view">
+            <field name="name">hr.department.tree.inherit</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_tree"/>
+            <field name="arch" type="xml">
+                <field name="parent_id" position="after">
+                    <field name="g_center"/>
+                    <field name="g_brand"/>
+                    <field name="g_tenantOrgId" groups="base.user_root"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_department_filter" model="ir.ui.view">
+            <field name="name">hr.department.search.inherit</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="inside">
+                    <filter string="品牌院/技术中心" name="is_g_center" domain="[('g_center','=',True)]"/>
+                    <field name="parent_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_employee_form" model="ir.ui.view">
+            <field name="name">hr.employee.form.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="work_email" position="after">
+                    <field name="g_soft_id"/>
+                    <field name="g_grade"/>
+                </field>
+
+                <field name="user_id" position="after">
+                    <field name="g_login"/>
+                    <field name="g_is_to_update"/>
+                </field>
+                <field name="department_id" position="before">
+                    <field name="g_is_supplier"/>
+                    <field name="g_com_name"/>
+                </field>
+                <field name="coach_id" position="attributes">
+                    <attributes name="invisible">1</attributes>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_employee_tree" model="ir.ui.view">
+            <field name="name">hr.employee.tree.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_tree"/>
+            <field name="arch" type="xml">
+                <field name="department_id" position="after">
+                    <field name="g_soft_id"/>
+                </field>
+                <field name="job_id" position="after">
+                    <field name="g_grade" invisible="1"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="geely_base_ehr_domain_tree" model="ir.ui.view">
+            <field name="name">geely.base.ehr.domain.tree</field>
+            <field name="model">geely.base.ehr.domain</field>
+            <field name="arch" type="xml">
+                <tree delete="0" editable="top">
+                    <field name="name" required="1"/>
+                    <field name="company_id" options="{'no_create': 1}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="act_geely_base_ehr_domain" model="ir.actions.act_window">
+            <field name="name">账号后缀</field>
+            <field name="res_model">geely.base.ehr.domain</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+
+        <record id="geely_ehr_mployee_wizard_form" model="ir.ui.view">
+            <field name="name">geely.ehr.employee.wizard.form</field>
+            <field name="model">geely.ehr.employee.wizard</field>
+            <field name="arch" type="xml">
+                <form js_class="ehr_employee_form_view">
+                    <label for="line_ids"/>
+                    <field name="line_ids" widget="employee_one2many_select">
+                        <tree editable="bottom" create="0" delete="0">
+                            <field name="name" readonly="1"/>
+                            <field name="g_soft_id" readonly="1" invisible="context.get('hide_no')"/>
+                            <field name="g_login" readonly="1"/>
+                            <field name="department" readonly="1"/>
+                            <field name="company" readonly="1"/>
+                            <field name="phone" readonly="1"/>
+                            <field name="email" readonly="1"/>
+                            <field name="select" class="exclude_select"/>
+                            <field name="data" invisible="1"/>
+                        </tree>
+                    </field>
+                    <footer>
+                        <button name="btn_confirm" type="object" string="确认" class="oe_highlight"/>
+                        <button special="cancel" string="取消" class="oe_link"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="geely_ehr_update_wizard_form" model="ir.ui.view">
+            <field name="name">geely.ehr.update.wizard.form</field>
+            <field name="model">geely.ehr.update.wizard</field>
+            <field name="arch" type="xml">
+                <form string="更新员工信息">
+                    <sheet>
+                        <group>
+                            <group>
+                                <label for="employee_login"/>
+                                <div class="o_row">
+                                    <field name="employee_login"/>
+                                    <span>@</span>
+                                    <field name="domain_id" options="{'no_create':1,'no_open':1}"/>
+                                    <button name="btn_check_employee_login" string="搜索" type="object"/>
+                                </div>
+                                <label for="employee_no"/>
+                                <div class="o_row">
+                                    <field name="employee_no"/>
+                                    <button name="btn_check_employee_no" string="搜索" type="object"/>
+                                </div>
+                                <label for="employee"/>
+                                <div class="o_row">
+                                    <field name="employee"/>
+                                    <button name="btn_check_employee_name" string="搜索" type="object"/>
+                                </div>
+                            </group>
+                            <group>
+                                <field name="company"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="result" readonly="1"/>
+                        </group>
+                        <notebook>
+                            <page string="员工信息">
+                                <group>
+                                    <group>
+                                        <field name="employee_id" readonly="1"/>
+                                        <field name="com_name" readonly="1"/>
+                                        <field name="department_id"/>
+                                    </group>
+                                    <group>
+                                        <field name="job_id"/>
+                                        <field name="work_email"/>
+                                        <field name="work_phone"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="geely_ehr_update_multi_wizard_form" model="ir.ui.view">
+            <field name="name">geely.ehr.update.multi.wizard.form</field>
+            <field name="model">geely.ehr.update.multi.wizard</field>
+            <field name="arch" type="xml">
+                <form string="批量更新">
+                    <header>
+                        <button name="btn_confirm" string="更新" type="object" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="func" widget="radio" options="{'horizontal':1}"/>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="employee_no" placeholder="多条数据用换行分开"
+                                       attrs="{'invisible':[('func','!=','employee_no')],'required':[('func','=','employee_no')]}"/>
+                                <field name="employee_login" placeholder="多条数据用换行分开"
+                                       attrs="{'invisible':[('func','!=','employee_login')],'required':[('func','=','employee_login')]}"/>
+                            </group>
+                            <group>
+                                <field name="result" readonly="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="resource_calendar_form" model="ir.ui.view">
+            <field name="name">resource.calendar.form.inherit</field>
+            <field name="model">resource.calendar</field>
+            <field name="inherit_id" ref="resource.resource_calendar_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group" position="before">
+                    <div class="oe_button_box" name="button_box">
+                        <button name="%(resource.resource_calendar_closing_days)d" type="action" class="oe_stat_button"
+                                icon="fa-users">
+                            <span widget="statinfo">休息日</span>
+                        </button>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_resource_calendar" model="ir.ui.view">
+            <field name="name">resource.calendar.leaves.calendar.inherit</field>
+            <field name="model">resource.calendar.leaves</field>
+            <field name="inherit_id" ref="resource.view_resource_calendar"/>
+            <field name="arch" type="xml">
+                <xpath expr="//calendar" position="attributes">
+                    <attribute name="mode">month</attribute>
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

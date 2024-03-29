@@ -1,0 +1,126 @@
+
+.home_root {
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  padding: 1.5rem;
+  background: url(/web_theme/static/src/img/home-menu-bg-overlay.svg), linear-gradient(to bottom, #7C7BAD, #c3c2cc);
+}
+
+.home_root .home-menu {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: center;
+}
+
+.home_root .search-bar {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.home_root .search-bar .search-box {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  padding: 0.75rem 1.25rem;
+  box-shadow: inset 0 1px 0 #ffffff1a, 0 1px 0 #0000001a;
+  text-shadow: 0 1px 0 #00000080;
+  border-radius: 0.5rem;
+  background-color: #ffffff1a;
+}
+
+.home_root .search-bar .search-box input {
+  margin-left: 1rem;
+  flex: 1 1 100%;
+  height: 2rem;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  display: block;
+  padding: 2px;
+  box-shadow: none;
+}
+
+.home_root .search-bar .search-box input:focus {
+  outline: none;
+}
+
+.home_root .search-bar .search-box input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.home_root .content-container {
+  width: 70%;
+  -webkit-flex-wrap: wrap; flex-wrap: wrap;
+  user-select: none;
+}
+
+.home_root .content-container .o-app {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3%;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease 0s;
+  padding: 10px 0;
+  width: 33.33333333%;
+}
+
+.home_root .content-container .o-app:hover {
+  background-color: #ffffff0d;
+}
+
+.home_root .content-container .o-app:hover .o_app_icon {
+  box-shadow: 0 8px 15px -10px black;
+  transform: translateZ(-1px);
+}
+
+@media (min-width: 576px) {
+  .home_root .content-container .o-app {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .home_root .content-container .o-app {
+    width: 16.66666667%;
+  }
+}
+
+.home_root .content-container .o-app .o_app_icon {
+  border-radius: 4%;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 8px 0 -10px black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 80%;
+  max-width: 70px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.home_root .content-container .o-app .o_caption {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  margin: 4px 0;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  font-size: 1.25rem;
+}
+
+.home_root .search-results {
+  width: 70%;
+  background: url(/web_theme/static/src/img/home-menu-bg-overlay.svg), linear-gradient(to bottom, #e9ecef, #FFFFFF);
+  background-position: center;
+  background-size: cover;
+  margin-top: -2rem;
+}
+
+.home_root .search-results a {
+  padding: 1rem 1.5rem;
+}

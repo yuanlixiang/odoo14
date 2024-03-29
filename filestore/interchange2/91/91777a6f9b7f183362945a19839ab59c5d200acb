@@ -1,0 +1,25 @@
+
+.o_notification_manager .o_notification.o_success {
+  color: white;
+  background-color: #28a745;
+}
+
+.o_notification_manager .o_notification.o_danger {
+  color: white;
+  background-color: #dc3545;
+}
+
+.o_notification_manager .o_notification.o_warning {
+  color: white;
+  background-color: #ffc107;
+}
+
+.o_notification_manager .o_notification.o_info {
+  color: white;
+  background-color: #17a2b8;
+}
+
+.o_notification_manager .o_notification.o_default {
+  color: black;
+}
+

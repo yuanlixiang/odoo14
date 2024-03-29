@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <data>
+
+        <record id="act_geely_users_login_log" model="ir.actions.act_window">
+            <field name="name">用户登录日志</field>
+            <field name="res_model">geely.users.login.log</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <record id="act_geely_users_access_log" model="ir.actions.act_window">
+            <field name="name">用户访问日志</field>
+            <field name="res_model">geely.users.access.log</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+
+        <record id="act_geely_ehr_update_wizard" model="ir.actions.act_window">
+            <field name="name">查询/更新员工信息</field>
+            <field name="res_model">geely.ehr.update.wizard</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <record id="act_geely_ehr_update_multi_wizard" model="ir.actions.act_window">
+            <field name="name">批量更新员工信息</field>
+            <field name="res_model">geely.ehr.update.multi.wizard</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <record id="update_res_users_email" model="ir.actions.server">
+            <field name="name">更新关注者Email</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_res_users"/>
+            <field name="binding_model_id" ref="model_res_users"/>
+            <field name="binding_view_types">list</field>
+            <field name="state">code</field>
+            <field name="code">
+                if context.get('active_ids'):
+                   model.browse(context['active_ids']).change_update_work_email_user()
+            </field>
+        </record>
+
+        <record id="action_access_log_report" model="ir.actions.client">
+            <field name="name">模块访问日志报表</field>
+            <field name="tag">access_log_report</field>
+            <field name="res_model">geely.users.access.log</field>
+        </record>
+
+    </data>
+</odoo>

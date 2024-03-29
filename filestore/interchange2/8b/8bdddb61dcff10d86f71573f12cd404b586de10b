@@ -1,0 +1,14 @@
+
+@media (max-width: 767.98px) {
+  body.o_web_client .o_graph_controller .o_control_panel .o_cp_buttons {
+    display: -webkit-box; display: -webkit-flex; display: flex;
+    -webkit-flex-wrap: wrap; flex-wrap: wrap;
+  }
+  body.o_web_client .o_graph_controller .o_control_panel .o_cp_buttons button {
+    margin-right: 8px !important;
+  }
+  body.o_web_client .o_graph_controller .o_graph_renderer {
+    padding: 30px 15px !important;
+  }
+}
+

@@ -1,0 +1,9 @@
+
+.o_x2m_control_panel .o_cp_pager button {
+  margin-bottom: 0.25rem;
+}
+
+.o_x2m_control_panel .o_cp_buttons button {
+  margin-bottom: 0.25rem;
+}
+

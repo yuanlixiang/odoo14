@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="module_operation_history" model="ir.module.category">
+            <field name="name">日志管理</field>
+        </record>
+
+        <record id="group_geely_operation_manager" model="res.groups">
+            <field name="name">查看操作日志</field>
+            <field name="category_id" ref="module_operation_history"/>
+        </record>
+<!--        员工同步后自动加入下列组别-->
+        <record id="group_geely_supplier" model="res.groups">
+            <field name="name">吉利供应商</field>
+        </record>
+        <record id="group_geely_institute" model="res.groups">
+            <field name="name">研究总院</field>
+        </record>
+
+        <record model="ir.module.category" id="module_category_debug_mode">
+            <field name="name">Debug Mode</field>
+            <field name="sequence">100</field>
+        </record>
+
+        <record model="res.groups" id="group_debug_mode_enable">
+            <field name="category_id" ref="geely_base.module_category_debug_mode"/>
+            <field name="name">Enable debug mode</field>
+            <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        </record>
+    </data>
+</odoo>

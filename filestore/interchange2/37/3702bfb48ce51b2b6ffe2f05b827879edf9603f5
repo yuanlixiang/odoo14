@@ -1,0 +1,78 @@
+
+.search_control {
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+}
+
+.search_control .open_close {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.search_control .open_close > div {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  width: 50px;
+  cursor: pointer;
+}
+
+.search_control .open_close .btn_triangle {
+  padding-top: 5px;
+  height: 20px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.open-search-control {
+  display: block;
+  width: 100%;
+}
+
+.open-search-control .search_fields {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-wrap: wrap; flex-wrap: wrap;
+  width: 100%;
+}
+
+.open-search-control .search_fields .search_field {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: center;
+  width: 22%;
+  height: 25px;
+  margin: 1px 10px;
+}
+
+.open-search-control .search_fields .search_field > span {
+  width: 40%;
+  text-align: right;
+  padding-right: 5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.open-search-control .search_fields .search_field > div {
+  width: 60%;
+}
+
+.open-search-control .search_fields .search_field input {
+  height: 20px;
+  outline: none;
+}
+
+.open-search-control .search_operation {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-pack: end; justify-content: flex-end;
+  margin: 3px 0;
+}
+
+.open-search-control .search_operation .search_btn {
+  margin-right: 200px;
+}
+
+.open-search-control .search_operation .search_btn button {
+  margin: 0 12px;
+}
+

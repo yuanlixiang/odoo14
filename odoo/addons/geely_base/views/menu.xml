@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+
+    <menuitem id="menu_login_config_reports" name="访问报表" sequence='200'
+              groups="geely_base.group_geely_operation_manager"
+              web_icon="geely_base,static/description/icona.png"/>
+
+<!--    <menuitem id="menu_config_reports" name="报表" parent="base.menu_administration"  sequence='100'/>-->
+        <menuitem id="menu_base_geely_users_login" name="用户登录日志" parent="menu_login_config_reports"
+              sequence='1' action="act_geely_users_login_log"/>
+        <menuitem id="menu_base_geely_users_access" name="用户访问日志" parent="menu_login_config_reports"
+              sequence='2' action="act_geely_users_access_log"/>
+
+     <menuitem name="操作日志" id="menu_geely_operation_historys" parent="menu_login_config_reports" sequence="50"/>
+            <menuitem name="操作日志" id="menu_geely_records_download_history" parent="menu_geely_operation_historys"
+                      action="act_geely_operation_history" sequence="5"/>
+            <menuitem name="附件下载日志" id="menu_geely_operation_attachment_history" parent="menu_geely_operation_historys"
+                      action="act_geely_attachment_operation_history" sequence="10"/>
+
+    <menuitem name="报表" id="menu_login_access_report_main" parent="menu_login_config_reports" sequence="1000"/>
+            <menuitem name="模块访问日志报表" id="menu_access_log_report" parent="menu_login_access_report_main"
+                      action="action_access_log_report" sequence="10"/>
+
+     <menuitem name="Hr" id="menu_geely_hr" sequence="200" web_icon="hr,static/description/icon.png"/>
+        <menuitem name="员工" id="menu_geely_hr_main" parent="menu_geely_hr" sequence="10"/>
+        <menuitem name="查询/更新" id="menu_geely_ehr_update_wizard" parent="menu_geely_hr_main" action="act_geely_ehr_update_wizard" sequence="10"/>
+        <menuitem name="批量更新" id="menu_geely_ehr_update_multi_wizard" parent="menu_geely_hr_main" action="act_geely_ehr_update_multi_wizard" sequence="10"/>
+        <menuitem name="账号后缀" id="menu_geely_base_ehr_domain" parent="menu_geely_hr_main" action="act_geely_base_ehr_domain" sequence="30" groups="base.group_system"/>
+
+</odoo>

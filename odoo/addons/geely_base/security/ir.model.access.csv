@@ -1,0 +1,25 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+aceess_users_ldap_model,users_ldap_model,model_res_company_ldap,base.group_user,1,1,1,1
+access_resource_calendar_all,resource.calendar all,resource.model_resource_calendar,base.group_user,1,0,0,0
+access_resource_calendar_attendance_all,resource.calendar.attendance.all,resource.model_resource_calendar_attendance,base.group_user,1,0,0,0
+access_resource_calendar_leaves_all,resource.calendar.leaves.all,resource.model_resource_calendar_leaves,base.group_user,1,0,0,0
+
+access_geely_ehr_employee_wizard,geely.ehr.employee.wizard,model_geely_ehr_employee_wizard,base.group_user,1,1,1,0
+access_geely_ehr_update_wizard,geely.ehr.update.wizard,model_geely_ehr_update_wizard,base.group_user,1,1,1,0
+access_geely_ehr_update_multi_wizard,geely.ehr.update.multi.wizard,model_geely_ehr_update_multi_wizard,base.group_user,1,1,1,0
+access_geely_ehr_employee_wizard_line,geely.ehr.employee.wizard.line,model_geely_ehr_employee_wizard_line,base.group_user,1,1,1,0
+access_geely_base_ehr_domain,geely.base.ehr.domain,model_geely_base_ehr_domain,base.group_system,1,1,1,1
+access_geely_base_ehr_domain_user,geely.base.ehr.domain.user,model_geely_base_ehr_domain,base.group_user,1,0,0,0
+
+access_geely_users_login_log,geely.users.login.log,model_geely_users_login_log,group_geely_operation_manager,1,1,1,0
+access_geely_users_access_log,geely.users.access.log,model_geely_users_access_log,group_geely_operation_manager,1,1,1,0
+access_geely_operation_history_manager,geely.operation.history.manager,model_geely_operation_history,group_geely_operation_manager,1,0,0,0
+access_geely_operation_attachment_history,geely.operation.attachment.history,model_geely_operation_attachment_history,group_geely_operation_manager,1,0,0,0
+
+
+access_geely_choose_month_wizard_all,geely.choose.month.wizard all,model_geely_choose_month_wizard,base.group_user,1,1,1,1
+access_geely_choose_date_wizard_all,geely.choose.date.wizard all,model_geely_choose_date_wizard,base.group_user,1,1,1,1
+access_ir_attachment_category_all,ir.attachment.category all,model_ir_attachment_category,base.group_user,1,1,1,1
+
+access_ir_module_category_user,ir.module.category user,base.model_ir_module_category,base.group_user,1,0,0,0
+access_ir_ui_view_user,ir.ui.view user,base.model_ir_ui_view,base.group_user,1,0,0,0

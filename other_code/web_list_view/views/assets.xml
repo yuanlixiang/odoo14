@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" inherit_id="web.assets_backend" name="Web Backend">
+        <xpath expr="script[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/web_list_view/static/src/scss/style.scss"/>
+            <script type="text/javascript" src="/web_list_view/static/src/js/list_renderer.js"/>
+        </xpath>
+    </template>
+</odoo>

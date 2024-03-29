@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <data>
+        <record id="view_geely_wait_sync_data_tree" model="ir.ui.view">
+            <field name="name">geely.wait.sync.data.tree</field>
+            <field name="model">geely.wait.sync.data</field>
+            <field name="arch" type="xml">
+                <tree create="0" delete="0">
+                    <field name="model_id"/>
+                    <field name="model"/>
+                    <field name="ttype"/>
+                    <field name="state"/>
+                    <field name="sync_date"/>
+                    <field name="error_count"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_geely_wait_sync_data_form" model="ir.ui.view">
+            <field name="name">geely.wait.sync.data.form</field>
+            <field name="model">geely.wait.sync.data</field>
+            <field name="arch" type="xml">
+                <form create="0" delete="0" edit="0">
+                    <header>
+                        <button name="action_sync_base_data" string="推送" attrs="{'invisible': ['|', ('state', '=', 'done'), ('ttype', '!=', 'base_increment')]}" type="object"/>
+                        <button name="process_part_fixed_data" string="处理定点数据" attrs="{'invisible': ['|', ('state', '=', 'done'), ('ttype', '!=', 'fixed')]}" type="object"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="model_id"/>
+                                <field name="datas"/>
+                                <field name="ttype"/>
+                            </group>
+                            <group>
+                                <field name="model"/>
+                                <field name="sync_date"/>
+                                <field name="error_count"/>
+                            </group>
+                        </group>
+                        <notebook attrs="{'invisible':[('state', '!=', 'fail')]}">
+                            <page string="异常信息">
+                                <field name="error" nolabel="1"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_geely_wait_sync_data_search" model="ir.ui.view">
+            <field name="name">geely.wait.sync.data.search</field>
+            <field name="model">geely.wait.sync.data</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="model_id"/>
+                    <field name="model"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_state" string="状态" domain="[]" context="{'group_by': 'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_geely_wait_sync_data">
+            <field name="name">待处理数据</field>
+            <field name="res_model">geely.wait.sync.data</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>

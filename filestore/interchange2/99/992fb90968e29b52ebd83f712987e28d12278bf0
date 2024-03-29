@@ -1,0 +1,30 @@
+
+.access-log-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  justify-content: space-between;
+}
+
+.access-log-content .access-log-month-users, .access-log-content .access-log-date-module, .access-log-content .access-log-month-module {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  flex: 1 1 30%;
+}
+
+.access-log-content .access-log-month-users .buttons, .access-log-content .access-log-date-module .buttons, .access-log-content .access-log-month-module .buttons {
+  position: absolute;
+  left: 80px;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: center;
+}
+
+.access-log-content .access-log-month-users .buttons::before, .access-log-content .access-log-date-module .buttons::before, .access-log-content .access-log-month-module .buttons::before {
+  margin-right: 3px;
+}
+

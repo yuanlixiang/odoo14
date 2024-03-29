@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <data>
+        <menuitem name="待处理数据" id="menu_action_geely_wait_sync_data" sequence="150"
+                  parent="geely_sda_system.menu_geely_sda_configs"
+                  action="action_geely_wait_sync_data"
+                  groups="geely_sda_system.group_geely_sda_manager"/>
+        <menuitem name="技术交流" id="menu_interchange" sequence="20"
+                  action="action_to_interchange" web_icon="geely_interchange,static/description/icon.png"/>
+
+    </data>
+</odoo>

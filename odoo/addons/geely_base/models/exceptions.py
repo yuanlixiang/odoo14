@@ -1,0 +1,3 @@
+class UploadExtError(Exception):
+    pass
+

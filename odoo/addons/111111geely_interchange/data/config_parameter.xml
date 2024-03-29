@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<odoo>
+    <data noupdate="1">
+        <!--技术交流平台系统地址-->
+        <record id="sda_website" model="ir.config_parameter">
+            <field name="key">geely_interchange.website</field>
+            <field name="value">http://localhost:8070</field>
+        </record>
+        <!--技术交流平台系统地址基出数据增量接口地址-->
+        <record id="sync_base_data_url" model="ir.config_parameter">
+            <field name="key">geely_interchange.base_data_url</field>
+            <field name="value">/sda/increment</field>
+        </record>
+        <!--零件跳转到技术交流的地址-->
+        <record id="part_dump_url" model="ir.config_parameter">
+            <field name="key">geely_interchange.part_dump_url</field>
+            <field name="value">/sda/part/dump</field>
+        </record>
+
+
+        <!--技术交流平台基础模块-->
+        <record id="base_models" model="ir.config_parameter">
+            <field name="key">geely_interchange.base_models</field>
+            <field name="value">geely.pss.fastener,geely.pss.info,geely.pss.part,geely.sda.standard.unit,geely.sda.property.category,geely.sda.market.range,geely.sda.layout,geely.sda.interface.type,geely.sda.electron.type,geely.sda.material.category,geely.sda.statue,geely.sda.chip,geely.sda.project.stage,geely.sda.test.state,geely.parts.type,geely.sda.parameter,geely.sda.property.template,geely.electron,geely.sda.material,geely.sda.test,geely.sda.test.standard</field>
+        </record>
+
+    </data>
+</odoo>

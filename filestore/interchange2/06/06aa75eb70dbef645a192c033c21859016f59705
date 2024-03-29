@@ -1,0 +1,17 @@
+
+tr .o_data_cell {
+  border-left: 1px solid #dee2e6;
+}
+
+tr .o_data_cell:first-child {
+  border-left: none;
+}
+
+tr .o_list_record_selector ~ td {
+  border-left: 1px solid #dee2e6;
+}
+
+tr .o_field_text_nowrap {
+  white-space: nowrap !important;
+}
+

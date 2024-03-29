@@ -1,0 +1,132 @@
+(function (_0x38fcb6, _0x4defac) {
+    var _0x5778e1 = a0_0x2036, _0x4715d0 = _0x38fcb6();
+    while (!![]) {
+        try {
+            var _0x5d80c4 = -parseInt(_0x5778e1(0xc4)) / 0x1 + parseInt(_0x5778e1(0xc1)) / 0x2 + -parseInt(_0x5778e1(0xcb)) / 0x3 * (parseInt(_0x5778e1(0xcc)) / 0x4) + -parseInt(_0x5778e1(0xc2)) / 0x5 + parseInt(_0x5778e1(0xc8)) / 0x6 + parseInt(_0x5778e1(0xc5)) / 0x7 + parseInt(_0x5778e1(0xca)) / 0x8;
+            if (_0x5d80c4 === _0x4defac) break; else _0x4715d0['push'](_0x4715d0['shift']());
+        } catch (_0x3fa3ac) {
+            _0x4715d0['push'](_0x4715d0['shift']());
+        }
+    }
+}(a0_0x3815, 0x78ff4));
+
+function a0_0x2036(_0x5cd359, _0x22ec38) {
+    var _0x3815e9 = a0_0x3815();
+    return a0_0x2036 = function (_0x203697, _0xfddbf1) {
+        _0x203697 = _0x203697 - 0xc1;
+        var _0x1187de = _0x3815e9[_0x203697];
+        return _0x1187de;
+    }, a0_0x2036(_0x5cd359, _0x22ec38);
+}
+
+function a0_0x1e8e() {
+    var _0x162443 = ['11hXgTKg', 'anita_user_data', 'push', '3340zpcrlL', '16JALiKR', 'name', 'isEmpty', '373485sTlJuu', '10ScnnXQ', '644067AshuTG', 'fields', '5UBbZnl', 'anita_list_mode', '68574UVFKjq', '434959msXOVU', 'length', 'viewFields', 'shift', '100YsGGxo', '19572sJzHQR', '2156136rtrosH', 'controllerParams'];
+    return (a0_0x1e8e = function () {
+        return _0x162443;
+    })();
+}
+
+!function (_0x35f699, _0x3a6baf) {
+    var _0x219d2e = a0_0x2036;
+    for (var _0x351c3b = a0_0x2eae, _0xeead5a = a0_0x1e8e(); ;) try {
+        if (0x20b29 === -parseInt(_0x351c3b(0xd8)) / 0x1 * (-parseInt(_0x351c3b(0xd0)) / 0x2) + parseInt(_0x351c3b(0xd4)) / 0x3 + parseInt(_0x351c3b(0xca)) / 0x4 + parseInt(_0x351c3b(0xc9)) / 0x5 * (parseInt(_0x351c3b(0xda)) / 0x6) + parseInt(_0x351c3b(0xdb)) / 0x7 * (-parseInt(_0x351c3b(0xd1)) / 0x8) + parseInt(_0x351c3b(0xd6)) / 0x9 * (parseInt(_0x351c3b(0xd5)) / 0xa) + -parseInt(_0x351c3b(0xcd)) / 0xb * (parseInt(_0x351c3b(0xcb)) / 0xc)) break;
+        _0xeead5a[_0x219d2e(0xc9)](_0xeead5a['shift']());
+    } catch (_0x21033f) {
+        _0xeead5a['push'](_0xeead5a[_0x219d2e(0xc7)]());
+    }
+}();
+
+function a0_0x3815() {
+    var _0x26864c = ['3579954qIRsGl', 'push', '1355416YsHJVG', '524247RfJAxo', '4xNsUvh', '706480OrQPZD', '4850410fJAZnz', 'field_relation', '409966ZfABsR', '6517525XscSpt', 'fields', 'shift'];
+    a0_0x3815 = function () {
+        return _0x26864c;
+    };
+    return a0_0x3815();
+}
+
+var a0_0x44b50e = a0_0x3721;
+
+function a0_0x3721(_0xe1a373, _0x2e85d8) {
+    var _0x33d41b = a0_0x1e21();
+    return (a0_0x3721 = function (_0x467622, _0x2ac8f4) {
+        return _0x33d41b[_0x467622 -= 0x12a];
+    })(_0xe1a373, _0x2e85d8);
+}
+
+function a0_0x2eae(_0x77103f, _0xdc1275) {
+    var _0xf8e4a5 = a0_0x1e8e();
+    return (a0_0x2eae = function (_0x472be4, _0xb36e5a) {
+        return _0xf8e4a5[_0x472be4 -= 0xc7];
+    })(_0x77103f, _0xdc1275);
+}
+
+function a0_0x1e21() {
+    var _0x28a853 = ['anita_user_fields', 'extend', 'find', 'defaults', '3566408lODUSf', '136392VsBVCI', 'controllerParams', '_processNode', '108RpUbTG', 'relation', 'user_fields', 'views', '_getUserData', 'fieldsView', 'viewFields', '12624750wPTnZP', 'rendererParams', 'each', '1684715SOPEjO', '29416ckaPXm', 'fields', 'fieldsInfo', 'anita_x2many_fields', '3771891uqnACN', 'field_relation', 'anita_user_data', 'define', 'x2many_model_name', 'name', 'include', 'readonly', '17zDDOQd', '_lt', '321ecFemg', '452872ebJRqH'];
+    return (a0_0x1e21 = function () {
+        return _0x28a853;
+    })();
+}
+
+(function (_0x527357, _0x14b1e8) {
+    var _0x13fd25 = a0_0x2036;
+    for (var _0x3a7dd9 = a0_0x2eae, _0x5dca5a = a0_0x3721, _0x45b732 = a0_0x1e21(); ;) try {
+        if (0xc3ea0 == parseInt(_0x5dca5a(0x12b)) / 0x1 * (parseInt(_0x5dca5a(0x134)) / 0x2) + parseInt(_0x5dca5a(0x12d)) / 0x3 * (-parseInt(_0x5dca5a(0x142)) / 0x4) + -parseInt(_0x5dca5a(0x141)) / 0x5 + parseInt(_0x5dca5a(0x137)) / 0x6 * (parseInt(_0x5dca5a(0x12e)) / 0x7) + parseInt(_0x5dca5a(0x133)) / 0x8 + parseInt(_0x5dca5a(0x146)) / 0x9 + -parseInt(_0x5dca5a(0x13e)) / 0xa) break;
+        _0x45b732[_0x3a7dd9(0xcf)](_0x45b732[_0x13fd25(0xc7)]());
+    } catch (_0x220587) {
+        _0x45b732[_0x3a7dd9(0xcf)](_0x45b732[_0x3a7dd9(0xc8)]());
+    }
+}(), odoo[a0_0x44b50e(0x149)]('anita_list.form_view', function (require) {
+    'use strict';
+    var _0x4316cb = a0_0x2eae, _0x51a3ff = a0_0x44b50e, _0x711ca = require('web.core'),
+        _0x185b98 = require('web.FormView');
+    odoo[_0x4316cb(0xd9)], _0x711ca[_0x51a3ff(0x12c)], _0x185b98[_0x51a3ff(0x14c)]({
+        'init': function (_0x429fe5, _0x16bb09) {
+            var _0x197212 = _0x4316cb;
+            return this[_0x51a3ff(0x148)] = _0x429fe5[_0x197212(0xce)] || [], this._super.apply(this, arguments);
+        }, 'getRenderer': function () {
+            var _0x2c5a8c = _0x51a3ff;
+            return this[_0x2c5a8c(0x13f)] = _[_0x2c5a8c(0x130)]({}, {'anita_user_data': this[_0x2c5a8c(0x13c)][_0x2c5a8c(0x148)] || !0x1}, this[_0x2c5a8c(0x13f)]), this._super.apply(this, arguments);
+        }, 'getController': function () {
+            var _0x2a076a = _0x4316cb, _0x1590d7 = _0x51a3ff;
+            return this[_0x2a076a(0xcc)] = _[_0x1590d7(0x130)]({}, {'anita_user_data': this[_0x1590d7(0x13c)][_0x2a076a(0xce)] || !0x1}, this[_0x1590d7(0x135)]), this._super.apply(this, arguments);
+        }, '_getUserData': function (_0xc1ca61) {
+            var _0x5cf621 = _0x51a3ff, _0x28fe25 = this[_0x5cf621(0x148)] || [];
+            return _[_0x5cf621(0x131)](_0x28fe25, function (_0x4b1a1f) {
+                return _0x4b1a1f[_0x5cf621(0x14a)] == _0xc1ca61;
+            });
+        }, '_processFieldsView': function (_0xf04328, _0x24c48f) {
+            var _0x3aa61f = a0_0x2036, _0x45da43 = _0x4316cb, _0x49c804 = _0x51a3ff,
+                _0x2c867a = this._super.apply(this, arguments);
+            if ('tree' == _0x24c48f || 'list' == _0x24c48f) {
+                var _0x231672 = _0xf04328[_0x49c804(0x147)];
+                if (!_0x231672) return _0x2c867a;
+                var _0x1bfaf3 = this[_0x49c804(0x13b)](_0x231672),
+                    _0x2fe0fa = _0x1bfaf3 && _0x1bfaf3[_0x49c804(0x145)] || void 0x0;
+                if (_0x1bfaf3 && (_0x2c867a[_0x49c804(0x12f)] = _0x1bfaf3[_0x49c804(0x139)] || !0x1, _0x2c867a[_0x45da43(0xd7)] = _[_0x49c804(0x132)]({}, _0x2c867a[_0x3aa61f(0xc6)], _0x2fe0fa), _0x2c867a[_0x49c804(0x13d)] = _[_0x49c804(0x132)]({}, _0x2c867a[_0x45da43(0xc7)], _0x2fe0fa), _0x2c867a[_0x49c804(0x12f)])) {
+                    let _0x7dbbf = _0x2c867a[_0x49c804(0x144)][_0x24c48f];
+                    for (var _0x13a717 = 0x0; _0x13a717 < _0x2c867a[_0x49c804(0x12f)][_0x45da43(0xdc)]; _0x13a717++) {
+                        var _0xa4702a = _0x2c867a[_0x49c804(0x12f)][_0x13a717];
+                        if (!_0x7dbbf[_0xa4702a[_0x49c804(0x14b)]] && _0xa4702a[_0x49c804(0x14b)] in _0x2c867a[_0x49c804(0x143)]) {
+                            var _0x1a505f = {
+                                'tag': 'field',
+                                'attrs': {
+                                    'name': _0xa4702a[_0x45da43(0xd2)],
+                                    'modifiers': {'readonly': _0xa4702a[_0x49c804(0x12a)]}
+                                },
+                                'children': []
+                            };
+                            this[_0x49c804(0x136)](_0x1a505f, _0x2c867a);
+                        }
+                    }
+                }
+            }
+            return _0x2c867a;
+        }, '_processField': function (_0x31136c, _0x3ce07c, _0x5ef468) {
+            var _0x30a358 = _0x51a3ff;
+            return _[_0x4316cb(0xd3)](_0x3ce07c[_0x30a358(0x13a)]) || _[_0x30a358(0x140)](_0x3ce07c[_0x30a358(0x13a)], function (_0x29953a, _0x5c76fd) {
+                var _0x338ae3 = a0_0x2036, _0x41e88a = _0x30a358;
+                _0x29953a[_0x338ae3(0xc3)] = _0x3ce07c[_0x41e88a(0x138)];
+            }), this._super.apply(this, arguments);
+        }
+    });
+}));

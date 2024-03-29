@@ -1,0 +1,359 @@
+
+#geely_pss_bom_view_main .geely_pss_bom_view_panel_heading {
+  text-indent: 1em;
+  height: 3em;
+  line-height: 3em;
+  margin-left: 20px;
+  position: relative;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_panel_heading:before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  background-color: #337AB7;
+  height: 1em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.5em;
+  font-size: 18px;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_panel_heading .g_panel_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_panel_heading .geely_tb_field {
+  line-height: 18px;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_header {
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #e2e2e0;
+  position: relative;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_header .o_form_field {
+  padding-left: 10px;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_header .geely_pss_bom_view_search_button {
+  margin-top: -16px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_header .geely_pss_bom_view_search_button i {
+  margin-right: 5px;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_table {
+  background-color: #fff;
+  border: 1px solid #ddd !important;
+  font-size: 1em !important;
+  margin: 0 !important;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_table thead {
+  font-size: 13px !important;
+  background: #e2e2e0 !important;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_table thead tr th {
+  font-weight: bold;
+  font-size: 1em !important;
+  border: 1px solid #ddd !important;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_table tbody tr.branch {
+  background-color: #fff;
+}
+
+#geely_pss_bom_view_main .geely_pss_bom_view_table tbody tr.info {
+  background-color: #d9edf7;
+}
+
+.geely_pss_bom_view_table_container {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  align-items: flex-start;
+}
+
+.geely_pss_bom_view_table_container .fixed-table-box_fixed-right-patch {
+  height: 41px !important;
+}
+
+.geely_pss_bom_view_line_info {
+  display: inline-block;
+  position: relative;
+  max-height: 100%;
+  width: 600px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.geely_pss_bom_view_info_img {
+  width: 500px;
+  height: 500px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.geely_pss_bom_view_line_info .panel {
+  margin: 0;
+}
+
+.geely_pss_bom_view_line_info .panel .panel-body {
+  padding: 0;
+}
+
+.geely_pss_bom_view_line_info .panel .panel-heading .panel-title {
+  font-weight: 700;
+}
+
+.geely_pss_bom_view_line_info .panel .panel-heading {
+  color: #337ab7;
+  padding: 15px 15px;
+  background-color: #e2e2e0;
+}
+
+.geely_pss_bom_view_line_info thead {
+  background-color: #eef1f6;
+}
+
+.geely_pss_bom_view_line_info thead th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.geely_pss_bom_view_table .text-center {
+  text-align: center;
+}
+
+.geely_pss_bom_view_table tr td[data-col-index="0"] {
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: keep-all;
+}
+
+.geely_pss_bom_view_line_level5 {
+  background-color: #f1faff;
+}
+
+#geely_pss_bom_view.geely_pss_readonly, .geely_pss_no_select {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#geely_pss_bom_view_table td {
+  padding: .3em 0.3em;
+}
+
+#geely_pss_bom_view_table .table-cell {
+  padding-left: 0;
+  height: inherit;
+  line-height: inherit;
+}
+
+#geely_pss_bom_view_table .table-cell-inline {
+  display: inline;
+}
+
+.geely_pss_bom_view_table span .fa {
+  padding: 0;
+  margin-left: -1.5em;
+  font-size: 12px;
+}
+
+.geely_pss_bom_view_table span .fa.fa-folder {
+  color: #b1b0b0;
+  font-size: 12px !important;
+}
+
+.w-210 {
+  width: 210px;
+}
+
+.w-240 {
+  width: 220px;
+}
+
+.w-260 {
+  width: 260px;
+}
+
+.w-350 {
+  width: 350px;
+}
+
+#geely_pss_bom_view th.hidden, #geely_pss_bom_view td.hidden {
+  width: 0 !important;
+  border: none !important;
+}
+
+.geely_pss_bom_view_config_child .table_field {
+  background-color: #f7f7f7;
+  font-weight: 700;
+}
+
+.geely_pss_bom_view_main_dept .w-gantt[data-col-index="3"],
+.geely_pss_bom_view_main_dept .w-gantt[data-col-index="4"] {
+  width: 160px;
+}
+
+.geely_pss_tree th[data-id=level],
+.geely_pss_info_tree th[data-id=display_level] {
+  width: 70px;
+  text-align: center;
+}
+
+.geely_pss_info_tree th[data-id=part_type] {
+  width: 150px;
+  text-align: center;
+}
+
+.geely_pss_tree th[data-id=dept_name] {
+  width: 200px;
+}
+
+.geely_pss_tree td[data-field=level],
+.geely_pss_tree th input#level,
+.geely_pss_info_tree td[data-field=display_level],
+.geely_pss_info_tree th input#display_level,
+.geely_pss_info_tree td[data-field=part_type],
+.geely_pss_info_tree th select#part_type {
+  text-align: center;
+}
+
+.geely_pss_tree table {
+  min-width: 1200px;
+}
+
+.g_pss_sidebar_tree {
+  height: 100%;
+}
+
+.g_pss_sidebar_tree .table-responsive {
+  height: 100%;
+}
+
+.g_pss_sidebar_tree th[data-id=name_cn],
+.g_pss_sidebar_tree th[data-id=name_en] {
+  width: 350px;
+}
+
+.g_pss_sidebar_tree th[data-id=info_name_cn],
+.g_pss_sidebar_tree th[data-id=info_name_en] {
+  width: 350px;
+}
+
+.geely_pss_evaluate_tree th[data-id=name_cn],
+.geely_pss_evaluate_tree th[data-id=name_en] {
+  width: 40%;
+}
+
+.geely_pss_funl_tree th[data-id=function_id] {
+  width: 90px;
+}
+
+.geely_pss_homo_tree th[data-id=name_cn],
+.geely_pss_homo_tree th[data-id=name_en] {
+  width: 38%;
+}
+
+.geely_pss_pap_tree th[data-id=complete_name] {
+  width: 120px;
+}
+
+.geely_pss_pap_tree th[data-id=name_cn],
+.geely_pss_pap_tree th[data-id=name_en],
+.geely_pss_dvp_tree th[data-id=name_cn],
+.geely_pss_dpr_tree th[data-id=name_cn] {
+  width: 160px;
+}
+
+.geely_pss_dvp_tree th[data-id=name],
+.geely_pss_dpr_tree th[data-id=name],
+.geely_pss_dvp_tree th[data-id=owner],
+.geely_pss_dpr_tree th[data-id=owner] {
+  width: 100px;
+}
+
+.geely_pss_dvp_tree th[data-id=dept_name],
+.geely_pss_dpr_tree th[data-id=dept_name] {
+  width: 450px;
+}
+
+.geely_pss_info_tree th select#part_type {
+  text-align-last: center;
+}
+
+.geely_pss_info_tree td[data-field=part_type] {
+  padding-right: 16px;
+}
+
+/*.geely_pss_cycle_tree th[data-id^=geely_] {
+    background-color: #70bde0 !important;
+    padding-top: 30px;
+}
+.geely_pss_cycle_tree th[data-id=cycle_data_frozen]:after {
+    content: "全新产品-吉利经验";
+    position: absolute;
+    margin-top: -33px;
+    min-width: 133px;
+    margin-left: 133px;
+    z-index: 99;
+    font-size: 12px;
+}
+.geely_pss_cycle_tree th[data-id^=public_] {
+    background-color: #FFDAB9 !important;
+    padding-top: 30px;
+}
+.geely_pss_cycle_tree th[data-id=geely_mold_done]:after {
+    content: "全新产品-行业经验";
+    position: absolute;
+    margin-top: -45px;
+    min-width: 100px;
+    margin-left: 137px;
+    z-index: 99;
+    font-size: 12px;
+}*/
+.g_pss_fasten_sidebar {
+  display: block;
+  width: 260px;
+  float: left;
+  overflow: auto;
+  height: 100%;
+  background-color: #fff;
+  border-right: 1px solid #a8a8a8;
+}
+
+.g_pss_fasten_sidebar_toolbar {
+  font-size: 16px;
+  padding-left: 11px;
+  margin-top: 106px;
+}
+
+.g_pss_fasten_sidebar_toolbar a {
+  color: #999;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.g_pss_fasten_sidebar_toolbar a:hover {
+  color: orange;
+}
+
+#g_pss_fasten_sidebar_tree_key {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}

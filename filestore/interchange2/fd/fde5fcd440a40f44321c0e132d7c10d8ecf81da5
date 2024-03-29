@@ -1,0 +1,106 @@
+
+.o_flow_main {
+  top: 46px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.o_flow_main .o_control_panel {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #cccccc;
+}
+
+.o_flow_main .o_flow_container {
+  flex: 1;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+}
+
+.o_flow_main .o_flow_container .o_diagram {
+  flex: 1;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-widget-transform {
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  border: 1px solid #239edd;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-widget-transform > div {
+  border: 1px solid #239edd;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-widget-transform > div:hover {
+  background-color: #3dafe4;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-widget-transform-active-handle {
+  background-color: #3dafe4;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-widget-transform-resize {
+  border-radius: 0;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-widget-selection-inner {
+  border: 1px solid #239edd;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-widget-selection-box {
+  opacity: 0;
+}
+
+.o_flow_main .o_flow_container .o_diagram .x6-cell-tool-button[data-tool-name='button'] {
+  z-index: 1000;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail {
+  flex: 0 0 24rem;
+  border-left: 1px solid #cccccc;
+  background-color: white;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail > div {
+  flex: 1;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail .o_empty {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  color: #cccccc;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail .o_title {
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail .o_detail {
+  flex: 1;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail .o_detail > div:first-child {
+  flex: 1;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail .o_detail > div .o_fields {
+  margin-bottom: 0.75rem;
+}
+
+.o_flow_main .o_flow_container .o_diagram_node_link_detail .o_detail > div .o_fields > div:first-child {
+  font-weight: 600;
+}
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="geely_theme.HomeMenuItem" owl="1">
+        <a class="o-app" href="#" t-on-click.stop.prevent="_onAppClick">
+            <img class="o_app_icon" t-attf-src="data:image/png;base64,{{props.menu.web_icon_data}}"/>
+            <div class="o_caption" t-esc="props.menu.name"/>
+        </a>
+    </t>
+    <t t-name="geely_theme.HomeMenu" owl="1">
+        <div class="home-menu d-none flex-column">
+            <div class="search-bar">
+                <div class="search-box d-flex align-items-center">
+                    <span class="fa fa-search"/>
+                    <input t-ref="search-input" autocomplete="off" placeholder="搜索菜单...." type="search" t-on-input="_onInputQuickSearch"/>
+                </div>
+            </div>
+            <div class="content-container d-flex" t-if="!state.searchResult.length">
+                <t t-foreach="props.menuData.children" t-as="menu" t-key="menu.id">
+                    <HomeMenuItem menu="menu"/>
+                </t>
+            </div>
+            <div class="search-results" t-if="state.searchResult.length">
+                <t t-foreach="state.searchResult" t-as="menu" t-key="menu.id">
+                    <a
+                        class="dropdown-item"
+                        t-attf-href="#"
+                        t-att-data-action-id="menu.action_id"
+                        draggable="false"
+                        t-raw="menu.string"
+                        t-on-click.stop.prevent="_onMenuClick(menu.action_id, menu.id)"
+                    />
+                </t>
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,15 @@
+
+.o_field_text_json {
+  white-space: normal;
+  width: 100% !important;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.o_field_text_json .jsontree_tree, .o_field_text_json .jsontree_child-nodes {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+

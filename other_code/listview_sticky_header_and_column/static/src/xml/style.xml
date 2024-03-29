@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <style t-name="listview_sticky_header_and_column.style" type="text/css" class="js_lvs_style">
+        <t t-foreach="arr_offset_lefts" t-as="offset">
+            .o_list_view .table-responsive tr.o_data_row td:nth-child(<t t-esc="offset_index+1"/>) {
+                position: sticky;
+                left: <t t-esc="offset"/>px;
+                background-color: rgba(255,255,255);
+            }
+            .o_list_view .table-responsive thead tr:nth-child(1) th:nth-child(<t t-esc="offset_index+1"/>) {
+                position: sticky;
+                left: <t t-esc="offset"/>px;
+                z-index: 2
+            }
+            <t t-if="offset_last">
+                .o_list_view .table-responsive tr.o_data_row td:nth-child(<t t-esc="offset_index+1"/>) {
+                    box-shadow: -1px 0px 0 #ddd inset;
+                }
+                .o_list_view .table-responsive thead tr:nth-child(1) th:nth-child(<t t-esc="offset_index+1"/>) {
+                    box-shadow: -1px 0px 0 #ddd inset;
+                }
+            </t>
+        </t>
+    </style>
+</templates>

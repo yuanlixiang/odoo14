@@ -1,0 +1,27 @@
+
+html, body, #wrapwrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#wrapwrap {
+  z-index: 0;
+  position: relative;
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  -webkit-flex-flow: column nowrap; flex-flow: column nowrap;
+  overflow: auto;
+}
+
+#wrapwrap > * {
+  -webkit-box-flex: 0; -webkit-flex: 0 0 auto; flex: 0 0 auto;
+}
+
+#wrapwrap > main {
+  -webkit-box-flex: 1; -webkit-flex: 1 0 auto; flex: 1 0 auto;
+}
+
+.modal-open #wrapwrap {
+  overflow: hidden;
+}
+

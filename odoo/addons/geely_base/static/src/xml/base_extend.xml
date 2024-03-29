@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+    <!-- 应对侧边SearchPanel显示不全情况，添加title属性-->
+    <t t-inherit="web.SearchPanel.Category" t-inherit-mode="extension">
+        <xpath expr="//span[hasclass('o_search_panel_label_title')]" position="attributes">
+            <attribute name="t-attf-title">{{value.display_name}}</attribute>
+        </xpath>
+    </t>
+
+    <t t-name="geely_base.AccessLogTemp">
+        <div class="access-log-content">
+            <div class="access-log-month-users">
+                <div class="buttons">
+                    <button class="btn btn-sm btn-secondary fa fa-calendar month-users"/>
+                </div>
+            </div>
+            <div class="access-log-date-module">
+                <div class="buttons">
+                    <button class="btn btn-sm btn-secondary fa fa-calendar date-module"/>
+                </div>
+            </div>
+            <div class="access-log-month-module">
+                <div class="buttons">
+                    <button class="btn btn-sm btn-secondary fa fa-calendar month-module"/>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

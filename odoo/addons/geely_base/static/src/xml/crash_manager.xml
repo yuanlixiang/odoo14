@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-extend="CrashManager.error">
+        <t t-jquery="button.o_clipboard_button" t-operation="replace"/>
+        <t t-jquery="button.btn-link" t-operation="replace"/>
+    </t>
+
+</templates>

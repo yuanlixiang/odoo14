@@ -1,0 +1,238 @@
+
+.buttons-area {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+
+.buttons-area .inner {
+  position: absolute;
+  top: -48px;
+  right: 0;
+}
+
+.buttons-area .inner > button {
+  margin-left: 10px;
+}
+
+.page_buttons {
+  display: -webkit-box; display: -webkit-flex; display: flex;
+  flex-direction: row-reverse;
+}
+
+.page_buttons .page_right_buttons button {
+  margin-left: 5px;
+}
+
+.sub_part_bom th[data-name=level_id],
+.sub_part_bom th[data-name=level],
+.sub_part_bom th[data-name=part_no],
+.sub_part_bom th[data-name=name],
+.sub_part_bom th[data-name=part_type],
+.sub_part_bom th[data-name=qty],
+.sub_part_bom th[data-name=unit_id],
+.sub_part_bom th[data-name=buy_or_make] {
+  background-color: #ffc000 !important;
+}
+
+.sub_part_bom th[data-name=part_size_t],
+.sub_part_bom th[data-name=unit_weight],
+.sub_part_bom th[data-name=part_size_l],
+.sub_part_bom th[data-name=part_size_w],
+.sub_part_bom th[data-name=part_size_h],
+.sub_part_bom th[data-name=material_category_id],
+.sub_part_bom th[data-name=material_name],
+.sub_part_bom th[data-name=standard],
+.sub_part_bom th[data-name=material_spec],
+.sub_part_bom th[data-name=raw_material_manufacturer],
+.sub_part_bom th[data-name=recipe_number],
+.sub_part_bom th[data-name=raw_material_manufacturer_place],
+.sub_part_bom th[data-name=approve_type],
+.sub_part_bom th[data-name=chip_spec],
+.sub_part_bom th[data-name=collect],
+.sub_part_bom th[data-name=surface_treatment_process],
+.sub_part_bom th[data-name=surface_treatment_area],
+.sub_part_bom th[data-name=corrosion_resistance],
+.sub_part_bom th[data-name=welding_qty],
+.sub_part_bom th[data-name=welding_point_qty],
+.sub_part_bom th[data-name=glue_type],
+.sub_part_bom th[data-name=glue_length],
+.sub_part_bom th[data-name=double_welding_length],
+.sub_part_bom th[data-name=all_cycle_sales],
+.sub_part_bom th[data-name=mold_qty],
+.sub_part_bom th[data-name=inspection_tool_qty],
+.sub_part_bom th[data-name=fixture_qty] {
+  background-color: #00ffd9 !important;
+}
+
+.sub_part_bom th[data-name=buy_manufacturer],
+.sub_part_bom th[data-name=pmxu],
+.sub_part_bom th[data-name=vehicle],
+.sub_part_bom th[data-name=surface_treatment_supplier],
+.sub_part_bom th[data-name=buy_origin],
+.sub_part_bom th[data-name=sub_supplier_city],
+.sub_part_bom th[data-name=manufacture_process],
+.sub_part_bom th[data-name=assembling_process],
+.sub_part_bom th[data-name=color_code],
+.sub_part_bom th[data-name=note],
+.sub_part_bom th[data-name=carbon_emission],
+.sub_part_bom th[data-name=appearance],
+.sub_part_bom th[data-name=manufacture_device],
+.sub_part_bom th[data-name=device_type] {
+  background-color: #9897ce !important;
+}
+
+.sub_part_bom .bom_first_field {
+  width: 150px !important;
+  min-width: 150px !important;
+}
+
+.sub_part_bom .bom_level {
+  position: relative;
+}
+
+.sub_part_bom .bom_level:before, .sub_part_bom .bom_level:after {
+  position: absolute;
+  content: '';
+}
+
+.sub_part_bom .bom_level:before {
+  width: 1px;
+  top: 10%;
+  left: 0;
+  height: 40%;
+  border-left: 1px dotted #adb5bd;
+}
+
+.sub_part_bom .bom_level:after {
+  height: 1px;
+  width: 0.8rem;
+  top: 50%;
+  left: 0;
+  border-bottom: 1px dotted #adb5bd;
+}
+
+.sub_part_bom .bom_level_0 {
+  padding-left: 1.3rem;
+}
+
+.sub_part_bom .bom_level_0:before {
+  left: 0.3rem;
+}
+
+.sub_part_bom .bom_level_0:after {
+  left: calc(0.3rem + 1px);
+}
+
+.sub_part_bom .bom_level_1 {
+  padding-left: 2.8rem;
+}
+
+.sub_part_bom .bom_level_1:before {
+  left: 1.8rem;
+}
+
+.sub_part_bom .bom_level_1:after {
+  left: calc(1.8rem + 1px);
+}
+
+.sub_part_bom .bom_level_2 {
+  padding-left: 4.3rem;
+}
+
+.sub_part_bom .bom_level_2:before {
+  left: 3.3rem;
+}
+
+.sub_part_bom .bom_level_2:after {
+  left: calc(3.3rem + 1px);
+}
+
+.sub_part_bom .bom_level_3 {
+  padding-left: 5.8rem;
+}
+
+.sub_part_bom .bom_level_3:before {
+  left: 4.8rem;
+}
+
+.sub_part_bom .bom_level_3:after {
+  left: calc(4.8rem + 1px);
+}
+
+.sub_part_bom .bom_level_4 {
+  padding-left: 7.3rem;
+}
+
+.sub_part_bom .bom_level_4:before {
+  left: 6.3rem;
+}
+
+.sub_part_bom .bom_level_4:after {
+  left: calc(6.3rem + 1px);
+}
+
+.sub_part_bom .bom_level_5 {
+  padding-left: 8.8rem;
+}
+
+.sub_part_bom .bom_level_5:before {
+  left: 7.8rem;
+}
+
+.sub_part_bom .bom_level_5:after {
+  left: calc(7.8rem + 1px);
+}
+
+.sub_part_bom .bom_level_6 {
+  padding-left: 10.3rem;
+}
+
+.sub_part_bom .bom_level_6:before {
+  left: 9.3rem;
+}
+
+.sub_part_bom .bom_level_6:after {
+  left: calc(9.3rem + 1px);
+}
+
+.sub_part_bom .bom_level_7 {
+  padding-left: 11.8rem;
+}
+
+.sub_part_bom .bom_level_7:before {
+  left: 10.8rem;
+}
+
+.sub_part_bom .bom_level_7:after {
+  left: calc(11.8rem + 1px);
+}
+
+.sub_part_bom .bom_level_8 {
+  padding-left: 13.3rem;
+}
+
+.sub_part_bom .bom_level_8:before {
+  left: 12.3rem;
+}
+
+.sub_part_bom .bom_level_8:after {
+  left: calc(12.3rem + 1px);
+}
+
+.sub_part_bom .bom_level_9 {
+  padding-left: 14.8rem;
+}
+
+.sub_part_bom .bom_level_9:before {
+  left: 13.8rem;
+}
+
+.sub_part_bom .bom_level_9:after {
+  left: calc(13.8rem + 1px);
+}
+
+.sub_part_bom .bom_level {
+  vertical-align: middle;
+}
+
